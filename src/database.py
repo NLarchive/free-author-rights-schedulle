@@ -989,20 +989,33 @@ def search_works(query: str) -> List[Work]:
         return []
 
 def search_authors(query: str) -> List[Author]:
-    """Searches for authors by name (case-insensitive)."""
-    logger.info(f"Searching for authors matching: '{query}'")
+    """Searches for authors by name (case-insensitive), matching all query terms."""
+    logger.info(f"Searching for authors matching all terms in: '{query}'")
     authors = []
     try:
         with get_connection() as conn:
             conn.row_factory = dict_factory
             cursor = conn.cursor()
-            # Use LIKE for partial matching, case-insensitive
-            search_term = f"%{query}%"
-            cursor.execute("""
+
+            # Split the query into terms and create LIKE clauses for each
+            search_terms = query.split()
+            if not search_terms:
+                return [] # Return empty if query is empty or just spaces
+
+            # Build the WHERE clause dynamically
+            where_clauses = " AND ".join(["name LIKE ? COLLATE NOCASE"] * len(search_terms))
+            sql_query = f"""
                 SELECT * FROM authors
-                WHERE name LIKE ? COLLATE NOCASE
+                WHERE {where_clauses}
                 ORDER BY name
-            """, (search_term,))
+            """
+
+            # Create parameters with wildcards for each term
+            params = [f"%{term}%" for term in search_terms]
+
+            logger.debug(f"Executing SQL: {sql_query} with params: {params}")
+            cursor.execute(sql_query, params)
+
             rows = cursor.fetchall()
             for row in rows:
                 author = Author(
@@ -1014,7 +1027,7 @@ def search_authors(query: str) -> List[Author]:
                     bio=row.get('bio')
                 )
                 authors.append(author)
-            logger.info(f"Found {len(authors)} authors matching '{query}'")
+            logger.info(f"Found {len(authors)} authors matching all terms in '{query}'")
     except sqlite3.Error as e:
         logger.error(f"Database error searching authors: {e}", exc_info=True)
     return authors

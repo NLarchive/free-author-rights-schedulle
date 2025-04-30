@@ -1,0 +1,675 @@
+2025-04-29 21:18:40,643 - __main__ - INFO - Application started.
+2025-04-29 21:18:40,643 - __main__ - INFO - Initializing system...
+2025-04-29 21:18:40,643 - src.database - INFO - Initializing database at D:\CODE\PROJECTS\free-author-rights-schedulle\data\copyright_data.db
+2025-04-29 21:18:40,708 - src.database - INFO - Database initialized successfully.
+2025-04-29 21:18:40,714 - __main__ - INFO - Added/verified topic: Books
+2025-04-29 21:18:40,718 - __main__ - INFO - Added/verified topic: Movies
+2025-04-29 21:18:40,722 - __main__ - INFO - Added/verified topic: Music
+2025-04-29 21:18:40,769 - src.database - INFO - Default jurisdictions and copyright rules initialized
+2025-04-29 21:18:40,769 - __main__ - INFO - System initialized.
+2025-04-29 21:18:40,769 - src.database - INFO - Retrieved 0 works from database
+2025-04-29 21:18:40,769 - __main__ - INFO - No existing works found in database, adding sample data.
+2025-04-29 21:18:40,769 - __main__ - INFO - Adding sample data for popular works...
+2025-04-29 21:18:40,769 - src.scheduler - INFO - 'The Great Gatsby' expires on 2020-12-31 in US (published 1923-1977)
+2025-04-29 21:18:40,769 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 50 years in Canada: 1990-12-31
+2025-04-29 21:18:40,769 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in European Union: 2010-12-31
+2025-04-29 21:18:40,769 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in Japan: 2010-12-31
+2025-04-29 21:18:40,769 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 100 years in Mexico: 2040-12-31
+2025-04-29 21:18:40,769 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in United Kingdom: 2010-12-31
+2025-04-29 21:18:40,769 - src.scheduler - INFO - 'The Great Gatsby' expires on 2020-12-31 in US (published 1923-1977)
+2025-04-29 21:18:40,799 - src.database - INFO - Added famous work: The Great Gatsby
+2025-04-29 21:18:40,799 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in United Kingdom: 1982-12-31
+2025-04-29 21:18:40,799 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 50 years in Canada: 1962-12-31
+2025-04-29 21:18:40,799 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in European Union: 1982-12-31
+2025-04-29 21:18:40,799 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in Japan: 1982-12-31
+2025-04-29 21:18:40,799 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 100 years in Mexico: 2012-12-31
+2025-04-29 21:18:40,799 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in United Kingdom: 1982-12-31
+2025-04-29 21:18:40,799 - src.scheduler - INFO - 'Dracula' is in public domain in US (published before 1923)
+2025-04-29 21:18:40,820 - src.database - INFO - Added famous work: Dracula
+2025-04-29 21:18:40,829 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in United Kingdom: 1887-12-31
+2025-04-29 21:18:40,829 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 50 years in Canada: 1867-12-31
+2025-04-29 21:18:40,829 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in European Union: 1887-12-31
+2025-04-29 21:18:40,829 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in Japan: 1887-12-31
+2025-04-29 21:18:40,829 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 100 years in Mexico: 1917-12-31
+2025-04-29 21:18:40,829 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in United Kingdom: 1887-12-31
+2025-04-29 21:18:40,829 - src.scheduler - INFO - 'Pride and Prejudice' is in public domain in US (published before 1923)
+2025-04-29 21:18:40,850 - src.database - INFO - Added famous work: Pride and Prejudice
+2025-04-29 21:18:40,850 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in United Kingdom: 2020-12-31
+2025-04-29 21:18:40,850 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 50 years in Canada: 2000-12-31
+2025-04-29 21:18:40,850 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in European Union: 2020-12-31
+2025-04-29 21:18:40,850 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in Japan: 2020-12-31
+2025-04-29 21:18:40,850 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 100 years in Mexico: 2050-12-31
+2025-04-29 21:18:40,859 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in United Kingdom: 2020-12-31
+2025-04-29 21:18:40,859 - src.scheduler - INFO - '1984' expires on 2044-12-31 in US (published 1923-1977)
+2025-04-29 21:18:40,883 - src.database - INFO - Added famous work: 1984
+2025-04-29 21:18:40,885 - src.scheduler - INFO - 'The Wizard of Oz' expires on 2034-12-31 in US (published 1923-1977)
+2025-04-29 21:18:40,885 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 50 years in Canada: 1999-12-31
+2025-04-29 21:18:40,886 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in European Union: 2019-12-31
+2025-04-29 21:18:40,886 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in Japan: 2019-12-31
+2025-04-29 21:18:40,886 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 100 years in Mexico: 2049-12-31
+2025-04-29 21:18:40,886 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in United Kingdom: 2019-12-31
+2025-04-29 21:18:40,887 - src.scheduler - INFO - 'The Wizard of Oz' expires on 2034-12-31 in US (published 1923-1977)
+2025-04-29 21:18:40,910 - src.database - INFO - Added famous work: The Wizard of Oz
+2025-04-29 21:18:40,910 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in European Union: 2046-12-31
+2025-04-29 21:18:40,910 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 50 years in Canada: 2026-12-31
+2025-04-29 21:18:40,910 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in European Union: 2046-12-31
+2025-04-29 21:18:40,910 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in Japan: 2046-12-31
+2025-04-29 21:18:40,910 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 100 years in Mexico: 2076-12-31
+2025-04-29 21:18:40,910 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in United Kingdom: 2046-12-31
+2025-04-29 21:18:40,910 - src.scheduler - INFO - 'Metropolis' expires on 2022-12-31 in US (published 1923-1977)
+2025-04-29 21:18:40,935 - src.database - INFO - Added famous work: Metropolis
+2025-04-29 21:18:40,939 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in European Union: 2001-12-31
+2025-04-29 21:18:40,939 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 50 years in Canada: 1981-12-31
+2025-04-29 21:18:40,940 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in European Union: 2001-12-31
+2025-04-29 21:18:40,940 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in Japan: 2001-12-31
+2025-04-29 21:18:40,940 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 100 years in Mexico: 2031-12-31
+2025-04-29 21:18:40,940 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in United Kingdom: 2001-12-31
+2025-04-29 21:18:40,940 - src.scheduler - INFO - 'Nosferatu' is in public domain in US (published before 1923)
+2025-04-29 21:18:40,960 - src.database - INFO - Added famous work: Nosferatu
+2025-04-29 21:18:40,966 - src.scheduler - INFO - 'Rhapsody in Blue' expires on 2019-12-31 in US (published 1923-1977)
+2025-04-29 21:18:40,966 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 50 years in Canada: 1987-12-31
+2025-04-29 21:18:40,967 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in European Union: 2007-12-31
+2025-04-29 21:18:40,967 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in Japan: 2007-12-31
+2025-04-29 21:18:40,967 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 100 years in Mexico: 2037-12-31
+2025-04-29 21:18:40,968 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in United Kingdom: 2007-12-31
+2025-04-29 21:18:40,968 - src.scheduler - INFO - 'Rhapsody in Blue' expires on 2019-12-31 in US (published 1923-1977)
+2025-04-29 21:18:40,993 - src.database - INFO - Added famous work: Rhapsody in Blue
+2025-04-29 21:18:40,994 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in United Kingdom: 2004-12-31
+2025-04-29 21:18:40,994 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 50 years in Canada: 1984-12-31
+2025-04-29 21:18:40,995 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in European Union: 2004-12-31
+2025-04-29 21:18:40,995 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in Japan: 2004-12-31
+2025-04-29 21:18:40,995 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 100 years in Mexico: 2034-12-31
+2025-04-29 21:18:40,996 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in United Kingdom: 2004-12-31
+2025-04-29 21:18:40,996 - src.scheduler - INFO - 'The Planets' is in public domain in US (published before 1923)
+2025-04-29 21:18:41,020 - src.database - INFO - Added famous work: The Planets
+2025-04-29 21:18:41,020 - __main__ - INFO - Sample data added: 4 books, 3 movies, 2 music works
+2025-04-29 21:18:41,020 - __main__ - INFO - Generating schedule...
+2025-04-29 21:18:41,020 - src.database - INFO - Retrieved 3 works expiring on or before 2026-04-29
+2025-04-29 21:18:41,020 - src.database - INFO - Retrieved 4 public domain works
+2025-04-29 21:18:41,020 - src.database - INFO - Retrieved 9 works from database
+2025-04-29 21:18:41,020 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 50 years in Canada: 2000-12-31
+2025-04-29 21:18:41,020 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 50 years in Canada: 1962-12-31
+2025-04-29 21:18:41,020 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 50 years in Canada: 2026-12-31
+2025-04-29 21:18:41,020 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 50 years in Canada: 1981-12-31
+2025-04-29 21:18:41,020 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 50 years in Canada: 1867-12-31
+2025-04-29 21:18:41,020 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 50 years in Canada: 1987-12-31
+2025-04-29 21:18:41,020 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 50 years in Canada: 1990-12-31
+2025-04-29 21:18:41,020 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 50 years in Canada: 1984-12-31
+2025-04-29 21:18:41,020 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 50 years in Canada: 1999-12-31
+2025-04-29 21:18:41,020 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in European Union: 2020-12-31
+2025-04-29 21:18:41,020 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in European Union: 1982-12-31
+2025-04-29 21:18:41,020 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in European Union: 2046-12-31
+2025-04-29 21:18:41,020 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in European Union: 2001-12-31
+2025-04-29 21:18:41,029 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in European Union: 1887-12-31
+2025-04-29 21:18:41,030 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in European Union: 2007-12-31
+2025-04-29 21:18:41,030 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in European Union: 2010-12-31
+2025-04-29 21:18:41,031 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in European Union: 2004-12-31
+2025-04-29 21:18:41,031 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in European Union: 2019-12-31
+2025-04-29 21:18:41,032 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in Japan: 2020-12-31
+2025-04-29 21:18:41,032 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in Japan: 1982-12-31
+2025-04-29 21:18:41,032 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in Japan: 2046-12-31
+2025-04-29 21:18:41,032 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in Japan: 2001-12-31
+2025-04-29 21:18:41,032 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in Japan: 1887-12-31
+2025-04-29 21:18:41,032 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in Japan: 2007-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in Japan: 2010-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in Japan: 2004-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in Japan: 2019-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 100 years in Mexico: 2050-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 100 years in Mexico: 2012-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 100 years in Mexico: 2076-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 100 years in Mexico: 2031-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 100 years in Mexico: 1917-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 100 years in Mexico: 2037-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 100 years in Mexico: 2040-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 100 years in Mexico: 2034-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 100 years in Mexico: 2049-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in United Kingdom: 2020-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in United Kingdom: 1982-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in United Kingdom: 2046-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in United Kingdom: 2001-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in United Kingdom: 1887-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in United Kingdom: 2007-12-31
+2025-04-29 21:18:41,033 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in United Kingdom: 2010-12-31
+2025-04-29 21:18:41,039 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in United Kingdom: 2004-12-31
+2025-04-29 21:18:41,039 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in United Kingdom: 2019-12-31
+2025-04-29 21:18:41,040 - src.scheduler - INFO - '1984' expires on 2044-12-31 in US (published 1923-1977)
+2025-04-29 21:18:41,040 - src.scheduler - INFO - 'Dracula' is in public domain in US (published before 1923)
+2025-04-29 21:18:41,040 - src.scheduler - INFO - 'Metropolis' expires on 2022-12-31 in US (published 1923-1977)
+2025-04-29 21:18:41,040 - src.scheduler - INFO - 'Nosferatu' is in public domain in US (published before 1923)
+2025-04-29 21:18:41,040 - src.scheduler - INFO - 'Pride and Prejudice' is in public domain in US (published before 1923)
+2025-04-29 21:18:41,040 - src.scheduler - INFO - 'Rhapsody in Blue' expires on 2019-12-31 in US (published 1923-1977)
+2025-04-29 21:18:41,040 - src.scheduler - INFO - 'The Great Gatsby' expires on 2020-12-31 in US (published 1923-1977)
+2025-04-29 21:18:41,040 - src.scheduler - INFO - 'The Planets' is in public domain in US (published before 1923)
+2025-04-29 21:18:41,040 - src.scheduler - INFO - 'The Wizard of Oz' expires on 2034-12-31 in US (published 1923-1977)
+2025-04-29 21:18:41,040 - __main__ - INFO - Application finished.
+2025-04-29 21:44:28,925 - __main__ - INFO - Application started.
+2025-04-29 21:44:28,925 - __main__ - INFO - Initializing system...
+2025-04-29 21:44:28,926 - src.database - INFO - Initializing database at D:\CODE\PROJECTS\free-author-rights-schedulle\data\copyright_data.db
+2025-04-29 21:44:28,989 - src.database - INFO - Database initialized successfully.
+2025-04-29 21:44:28,994 - __main__ - INFO - Added/verified topic: Books
+2025-04-29 21:44:28,998 - __main__ - INFO - Added/verified topic: Movies
+2025-04-29 21:44:29,002 - __main__ - INFO - Added/verified topic: Music
+2025-04-29 21:44:29,053 - src.database - INFO - Default jurisdictions and copyright rules initialized
+2025-04-29 21:44:29,053 - __main__ - INFO - System initialized.
+2025-04-29 21:44:29,054 - src.database - INFO - Retrieved 0 works from database
+2025-04-29 21:44:29,054 - __main__ - INFO - No existing works found in database, adding sample data.
+2025-04-29 21:44:29,054 - __main__ - INFO - Adding sample data for popular works...
+2025-04-29 21:44:29,057 - src.scheduler - INFO - 'The Great Gatsby' expires on 2020-12-31 in US (published 1923-1977)
+2025-04-29 21:44:29,057 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 50 years in Canada: 1990-12-31
+2025-04-29 21:44:29,057 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in European Union: 2010-12-31
+2025-04-29 21:44:29,057 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in Japan: 2010-12-31
+2025-04-29 21:44:29,057 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 100 years in Mexico: 2040-12-31
+2025-04-29 21:44:29,058 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in United Kingdom: 2010-12-31
+2025-04-29 21:44:29,059 - src.scheduler - INFO - 'The Great Gatsby' expires on 2020-12-31 in US (published 1923-1977)
+2025-04-29 21:44:29,083 - src.database - INFO - Added famous work: The Great Gatsby
+2025-04-29 21:44:29,084 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in United Kingdom: 1982-12-31
+2025-04-29 21:44:29,085 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 50 years in Canada: 1962-12-31
+2025-04-29 21:44:29,085 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in European Union: 1982-12-31
+2025-04-29 21:44:29,085 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in Japan: 1982-12-31
+2025-04-29 21:44:29,086 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 100 years in Mexico: 2012-12-31
+2025-04-29 21:44:29,086 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in United Kingdom: 1982-12-31
+2025-04-29 21:44:29,087 - src.scheduler - INFO - 'Dracula' is in public domain in US (published before 1923)
+2025-04-29 21:44:29,110 - src.database - INFO - Added famous work: Dracula
+2025-04-29 21:44:29,111 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in United Kingdom: 1887-12-31
+2025-04-29 21:44:29,111 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 50 years in Canada: 1867-12-31
+2025-04-29 21:44:29,112 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in European Union: 1887-12-31
+2025-04-29 21:44:29,112 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in Japan: 1887-12-31
+2025-04-29 21:44:29,112 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 100 years in Mexico: 1917-12-31
+2025-04-29 21:44:29,113 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in United Kingdom: 1887-12-31
+2025-04-29 21:44:29,113 - src.scheduler - INFO - 'Pride and Prejudice' is in public domain in US (published before 1923)
+2025-04-29 21:44:29,138 - src.database - INFO - Added famous work: Pride and Prejudice
+2025-04-29 21:44:29,140 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in United Kingdom: 2020-12-31
+2025-04-29 21:44:29,140 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 50 years in Canada: 2000-12-31
+2025-04-29 21:44:29,140 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in European Union: 2020-12-31
+2025-04-29 21:44:29,140 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in Japan: 2020-12-31
+2025-04-29 21:44:29,141 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 100 years in Mexico: 2050-12-31
+2025-04-29 21:44:29,141 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in United Kingdom: 2020-12-31
+2025-04-29 21:44:29,142 - src.scheduler - INFO - '1984' expires on 2044-12-31 in US (published 1923-1977)
+2025-04-29 21:44:29,166 - src.database - INFO - Added famous work: 1984
+2025-04-29 21:44:29,168 - src.scheduler - INFO - 'The Wizard of Oz' expires on 2034-12-31 in US (published 1923-1977)
+2025-04-29 21:44:29,168 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 50 years in Canada: 1999-12-31
+2025-04-29 21:44:29,168 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in European Union: 2019-12-31
+2025-04-29 21:44:29,168 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in Japan: 2019-12-31
+2025-04-29 21:44:29,169 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 100 years in Mexico: 2049-12-31
+2025-04-29 21:44:29,169 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in United Kingdom: 2019-12-31
+2025-04-29 21:44:29,170 - src.scheduler - INFO - 'The Wizard of Oz' expires on 2034-12-31 in US (published 1923-1977)
+2025-04-29 21:44:29,194 - src.database - INFO - Added famous work: The Wizard of Oz
+2025-04-29 21:44:29,196 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in European Union: 2046-12-31
+2025-04-29 21:44:29,196 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 50 years in Canada: 2026-12-31
+2025-04-29 21:44:29,197 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in European Union: 2046-12-31
+2025-04-29 21:44:29,197 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in Japan: 2046-12-31
+2025-04-29 21:44:29,197 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 100 years in Mexico: 2076-12-31
+2025-04-29 21:44:29,198 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in United Kingdom: 2046-12-31
+2025-04-29 21:44:29,198 - src.scheduler - INFO - 'Metropolis' expires on 2022-12-31 in US (published 1923-1977)
+2025-04-29 21:44:29,223 - src.database - INFO - Added famous work: Metropolis
+2025-04-29 21:44:29,224 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in European Union: 2001-12-31
+2025-04-29 21:44:29,225 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 50 years in Canada: 1981-12-31
+2025-04-29 21:44:29,225 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in European Union: 2001-12-31
+2025-04-29 21:44:29,225 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in Japan: 2001-12-31
+2025-04-29 21:44:29,225 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 100 years in Mexico: 2031-12-31
+2025-04-29 21:44:29,226 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in United Kingdom: 2001-12-31
+2025-04-29 21:44:29,227 - src.scheduler - INFO - 'Nosferatu' is in public domain in US (published before 1923)
+2025-04-29 21:44:29,250 - src.database - INFO - Added famous work: Nosferatu
+2025-04-29 21:44:29,252 - src.scheduler - INFO - 'Rhapsody in Blue' expires on 2019-12-31 in US (published 1923-1977)
+2025-04-29 21:44:29,252 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 50 years in Canada: 1987-12-31
+2025-04-29 21:44:29,253 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in European Union: 2007-12-31
+2025-04-29 21:44:29,253 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in Japan: 2007-12-31
+2025-04-29 21:44:29,253 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 100 years in Mexico: 2037-12-31
+2025-04-29 21:44:29,254 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in United Kingdom: 2007-12-31
+2025-04-29 21:44:29,254 - src.scheduler - INFO - 'Rhapsody in Blue' expires on 2019-12-31 in US (published 1923-1977)
+2025-04-29 21:44:29,279 - src.database - INFO - Added famous work: Rhapsody in Blue
+2025-04-29 21:44:29,280 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in United Kingdom: 2004-12-31
+2025-04-29 21:44:29,281 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 50 years in Canada: 1984-12-31
+2025-04-29 21:44:29,281 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in European Union: 2004-12-31
+2025-04-29 21:44:29,281 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in Japan: 2004-12-31
+2025-04-29 21:44:29,281 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 100 years in Mexico: 2034-12-31
+2025-04-29 21:44:29,282 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in United Kingdom: 2004-12-31
+2025-04-29 21:44:29,283 - src.scheduler - INFO - 'The Planets' is in public domain in US (published before 1923)
+2025-04-29 21:44:29,305 - src.database - INFO - Added famous work: The Planets
+2025-04-29 21:44:29,305 - __main__ - INFO - Sample data added: 4 books, 3 movies, 2 music works
+2025-04-29 21:44:29,306 - __main__ - INFO - Generating schedule...
+2025-04-29 21:44:29,307 - src.database - INFO - Retrieved 3 works expiring on or before 2026-04-29
+2025-04-29 21:44:29,308 - src.database - INFO - Retrieved 4 public domain works
+2025-04-29 21:44:29,311 - src.database - INFO - Retrieved 9 works from database
+2025-04-29 21:44:29,311 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 50 years in Canada: 2000-12-31
+2025-04-29 21:44:29,311 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 50 years in Canada: 1962-12-31
+2025-04-29 21:44:29,311 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 50 years in Canada: 2026-12-31
+2025-04-29 21:44:29,311 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 50 years in Canada: 1981-12-31
+2025-04-29 21:44:29,312 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 50 years in Canada: 1867-12-31
+2025-04-29 21:44:29,312 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 50 years in Canada: 1987-12-31
+2025-04-29 21:44:29,312 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 50 years in Canada: 1990-12-31
+2025-04-29 21:44:29,312 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 50 years in Canada: 1984-12-31
+2025-04-29 21:44:29,312 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 50 years in Canada: 1999-12-31
+2025-04-29 21:44:29,313 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in European Union: 2020-12-31
+2025-04-29 21:44:29,314 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in European Union: 1982-12-31
+2025-04-29 21:44:29,314 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in European Union: 2046-12-31
+2025-04-29 21:44:29,315 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in European Union: 2001-12-31
+2025-04-29 21:44:29,316 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in European Union: 1887-12-31
+2025-04-29 21:44:29,316 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in European Union: 2007-12-31
+2025-04-29 21:44:29,317 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in European Union: 2010-12-31
+2025-04-29 21:44:29,317 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in European Union: 2004-12-31
+2025-04-29 21:44:29,318 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in European Union: 2019-12-31
+2025-04-29 21:44:29,318 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in Japan: 2020-12-31
+2025-04-29 21:44:29,318 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in Japan: 1982-12-31
+2025-04-29 21:44:29,318 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in Japan: 2046-12-31
+2025-04-29 21:44:29,320 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in Japan: 2001-12-31
+2025-04-29 21:44:29,320 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in Japan: 1887-12-31
+2025-04-29 21:44:29,320 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in Japan: 2007-12-31
+2025-04-29 21:44:29,320 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in Japan: 2010-12-31
+2025-04-29 21:44:29,320 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in Japan: 2004-12-31
+2025-04-29 21:44:29,320 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in Japan: 2019-12-31
+2025-04-29 21:44:29,320 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 100 years in Mexico: 2050-12-31
+2025-04-29 21:44:29,321 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 100 years in Mexico: 2012-12-31
+2025-04-29 21:44:29,321 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 100 years in Mexico: 2076-12-31
+2025-04-29 21:44:29,321 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 100 years in Mexico: 2031-12-31
+2025-04-29 21:44:29,321 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 100 years in Mexico: 1917-12-31
+2025-04-29 21:44:29,321 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 100 years in Mexico: 2037-12-31
+2025-04-29 21:44:29,321 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 100 years in Mexico: 2040-12-31
+2025-04-29 21:44:29,321 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 100 years in Mexico: 2034-12-31
+2025-04-29 21:44:29,321 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 100 years in Mexico: 2049-12-31
+2025-04-29 21:44:29,322 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in United Kingdom: 2020-12-31
+2025-04-29 21:44:29,323 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in United Kingdom: 1982-12-31
+2025-04-29 21:44:29,323 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in United Kingdom: 2046-12-31
+2025-04-29 21:44:29,324 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in United Kingdom: 2001-12-31
+2025-04-29 21:44:29,324 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in United Kingdom: 1887-12-31
+2025-04-29 21:44:29,325 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in United Kingdom: 2007-12-31
+2025-04-29 21:44:29,326 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in United Kingdom: 2010-12-31
+2025-04-29 21:44:29,326 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in United Kingdom: 2004-12-31
+2025-04-29 21:44:29,327 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in United Kingdom: 2019-12-31
+2025-04-29 21:44:29,328 - src.scheduler - INFO - '1984' expires on 2044-12-31 in US (published 1923-1977)
+2025-04-29 21:44:29,328 - src.scheduler - INFO - 'Dracula' is in public domain in US (published before 1923)
+2025-04-29 21:44:29,329 - src.scheduler - INFO - 'Metropolis' expires on 2022-12-31 in US (published 1923-1977)
+2025-04-29 21:44:29,330 - src.scheduler - INFO - 'Nosferatu' is in public domain in US (published before 1923)
+2025-04-29 21:44:29,330 - src.scheduler - INFO - 'Pride and Prejudice' is in public domain in US (published before 1923)
+2025-04-29 21:44:29,331 - src.scheduler - INFO - 'Rhapsody in Blue' expires on 2019-12-31 in US (published 1923-1977)
+2025-04-29 21:44:29,331 - src.scheduler - INFO - 'The Great Gatsby' expires on 2020-12-31 in US (published 1923-1977)
+2025-04-29 21:44:29,332 - src.scheduler - INFO - 'The Planets' is in public domain in US (published before 1923)
+2025-04-29 21:44:29,332 - src.scheduler - INFO - 'The Wizard of Oz' expires on 2034-12-31 in US (published 1923-1977)
+2025-04-29 21:44:29,333 - __main__ - INFO - Application finished.
+2025-04-29 21:59:17,065 - __main__ - INFO - Application started.
+2025-04-29 21:59:17,065 - __main__ - INFO - Initializing system...
+2025-04-29 21:59:17,066 - src.database - INFO - Initializing database at D:\CODE\PROJECTS\free-author-rights-schedulle\data\copyright_data.db
+2025-04-29 21:59:17,112 - src.database - INFO - Database initialized successfully.
+2025-04-29 21:59:17,116 - __main__ - INFO - Added/verified topic: Books
+2025-04-29 21:59:17,120 - __main__ - INFO - Added/verified topic: Movies
+2025-04-29 21:59:17,124 - __main__ - INFO - Added/verified topic: Music
+2025-04-29 21:59:17,174 - src.database - INFO - Default jurisdictions and copyright rules initialized
+2025-04-29 21:59:17,174 - __main__ - INFO - System initialized.
+2025-04-29 21:59:17,175 - src.database - INFO - Retrieved 0 works from database
+2025-04-29 21:59:17,175 - __main__ - INFO - No existing works found in database, adding sample data.
+2025-04-29 21:59:17,176 - __main__ - INFO - Adding sample data for popular works...
+2025-04-29 21:59:17,178 - src.scheduler - INFO - 'The Great Gatsby' expires on 2020-12-31 in US (published 1923-1977)
+2025-04-29 21:59:17,178 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 50 years in Canada: 1990-12-31
+2025-04-29 21:59:17,179 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in European Union: 2010-12-31
+2025-04-29 21:59:17,179 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in Japan: 2010-12-31
+2025-04-29 21:59:17,179 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 100 years in Mexico: 2040-12-31
+2025-04-29 21:59:17,180 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in United Kingdom: 2010-12-31
+2025-04-29 21:59:17,180 - src.scheduler - INFO - 'The Great Gatsby' expires on 2020-12-31 in US (published 1923-1977)
+2025-04-29 21:59:17,204 - src.database - INFO - Added famous work: The Great Gatsby
+2025-04-29 21:59:17,206 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in United Kingdom: 1982-12-31
+2025-04-29 21:59:17,206 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 50 years in Canada: 1962-12-31
+2025-04-29 21:59:17,206 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in European Union: 1982-12-31
+2025-04-29 21:59:17,207 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in Japan: 1982-12-31
+2025-04-29 21:59:17,207 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 100 years in Mexico: 2012-12-31
+2025-04-29 21:59:17,207 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in United Kingdom: 1982-12-31
+2025-04-29 21:59:17,208 - src.scheduler - INFO - 'Dracula' is in public domain in US (published before 1923)
+2025-04-29 21:59:17,232 - src.database - INFO - Added famous work: Dracula
+2025-04-29 21:59:17,234 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in United Kingdom: 1887-12-31
+2025-04-29 21:59:17,234 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 50 years in Canada: 1867-12-31
+2025-04-29 21:59:17,235 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in European Union: 1887-12-31
+2025-04-29 21:59:17,235 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in Japan: 1887-12-31
+2025-04-29 21:59:17,235 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 100 years in Mexico: 1917-12-31
+2025-04-29 21:59:17,236 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in United Kingdom: 1887-12-31
+2025-04-29 21:59:17,236 - src.scheduler - INFO - 'Pride and Prejudice' is in public domain in US (published before 1923)
+2025-04-29 21:59:17,260 - src.database - INFO - Added famous work: Pride and Prejudice
+2025-04-29 21:59:17,262 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in United Kingdom: 2020-12-31
+2025-04-29 21:59:17,262 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 50 years in Canada: 2000-12-31
+2025-04-29 21:59:17,263 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in European Union: 2020-12-31
+2025-04-29 21:59:17,263 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in Japan: 2020-12-31
+2025-04-29 21:59:17,263 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 100 years in Mexico: 2050-12-31
+2025-04-29 21:59:17,264 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in United Kingdom: 2020-12-31
+2025-04-29 21:59:17,265 - src.scheduler - INFO - '1984' expires on 2044-12-31 in US (published 1923-1977)
+2025-04-29 21:59:17,290 - src.database - INFO - Added famous work: 1984
+2025-04-29 21:59:17,292 - src.scheduler - INFO - 'The Wizard of Oz' expires on 2034-12-31 in US (published 1923-1977)
+2025-04-29 21:59:17,292 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 50 years in Canada: 1999-12-31
+2025-04-29 21:59:17,293 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in European Union: 2019-12-31
+2025-04-29 21:59:17,293 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in Japan: 2019-12-31
+2025-04-29 21:59:17,293 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 100 years in Mexico: 2049-12-31
+2025-04-29 21:59:17,293 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in United Kingdom: 2019-12-31
+2025-04-29 21:59:17,294 - src.scheduler - INFO - 'The Wizard of Oz' expires on 2034-12-31 in US (published 1923-1977)
+2025-04-29 21:59:17,319 - src.database - INFO - Added famous work: The Wizard of Oz
+2025-04-29 21:59:17,320 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in European Union: 2046-12-31
+2025-04-29 21:59:17,320 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 50 years in Canada: 2026-12-31
+2025-04-29 21:59:17,321 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in European Union: 2046-12-31
+2025-04-29 21:59:17,321 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in Japan: 2046-12-31
+2025-04-29 21:59:17,321 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 100 years in Mexico: 2076-12-31
+2025-04-29 21:59:17,322 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in United Kingdom: 2046-12-31
+2025-04-29 21:59:17,322 - src.scheduler - INFO - 'Metropolis' expires on 2022-12-31 in US (published 1923-1977)
+2025-04-29 21:59:17,347 - src.database - INFO - Added famous work: Metropolis
+2025-04-29 21:59:17,348 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in European Union: 2001-12-31
+2025-04-29 21:59:17,349 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 50 years in Canada: 1981-12-31
+2025-04-29 21:59:17,349 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in European Union: 2001-12-31
+2025-04-29 21:59:17,349 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in Japan: 2001-12-31
+2025-04-29 21:59:17,349 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 100 years in Mexico: 2031-12-31
+2025-04-29 21:59:17,350 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in United Kingdom: 2001-12-31
+2025-04-29 21:59:17,351 - src.scheduler - INFO - 'Nosferatu' is in public domain in US (published before 1923)
+2025-04-29 21:59:17,375 - src.database - INFO - Added famous work: Nosferatu
+2025-04-29 21:59:17,377 - src.scheduler - INFO - 'Rhapsody in Blue' expires on 2019-12-31 in US (published 1923-1977)
+2025-04-29 21:59:17,377 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 50 years in Canada: 1987-12-31
+2025-04-29 21:59:17,378 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in European Union: 2007-12-31
+2025-04-29 21:59:17,378 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in Japan: 2007-12-31
+2025-04-29 21:59:17,378 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 100 years in Mexico: 2037-12-31
+2025-04-29 21:59:17,379 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in United Kingdom: 2007-12-31
+2025-04-29 21:59:17,379 - src.scheduler - INFO - 'Rhapsody in Blue' expires on 2019-12-31 in US (published 1923-1977)
+2025-04-29 21:59:17,422 - src.database - INFO - Added famous work: Rhapsody in Blue
+2025-04-29 21:59:17,423 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in United Kingdom: 2004-12-31
+2025-04-29 21:59:17,424 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 50 years in Canada: 1984-12-31
+2025-04-29 21:59:17,424 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in European Union: 2004-12-31
+2025-04-29 21:59:17,424 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in Japan: 2004-12-31
+2025-04-29 21:59:17,424 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 100 years in Mexico: 2034-12-31
+2025-04-29 21:59:17,425 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in United Kingdom: 2004-12-31
+2025-04-29 21:59:17,426 - src.scheduler - INFO - 'The Planets' is in public domain in US (published before 1923)
+2025-04-29 21:59:17,456 - src.database - INFO - Added famous work: The Planets
+2025-04-29 21:59:17,456 - __main__ - INFO - Sample data added: 4 books, 3 movies, 2 music works
+2025-04-29 21:59:17,456 - __main__ - INFO - Generating schedule...
+2025-04-29 21:59:17,457 - src.database - INFO - Retrieved 3 works expiring on or before 2026-04-29
+2025-04-29 21:59:17,459 - src.database - INFO - Retrieved 4 public domain works
+2025-04-29 21:59:17,461 - src.database - INFO - Retrieved 9 works from database
+2025-04-29 21:59:17,461 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 50 years in Canada: 2000-12-31
+2025-04-29 21:59:17,461 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 50 years in Canada: 1962-12-31
+2025-04-29 21:59:17,461 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 50 years in Canada: 2026-12-31
+2025-04-29 21:59:17,462 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 50 years in Canada: 1981-12-31
+2025-04-29 21:59:17,462 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 50 years in Canada: 1867-12-31
+2025-04-29 21:59:17,462 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 50 years in Canada: 1987-12-31
+2025-04-29 21:59:17,462 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 50 years in Canada: 1990-12-31
+2025-04-29 21:59:17,462 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 50 years in Canada: 1984-12-31
+2025-04-29 21:59:17,462 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 50 years in Canada: 1999-12-31
+2025-04-29 21:59:17,463 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in European Union: 2020-12-31
+2025-04-29 21:59:17,464 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in European Union: 1982-12-31
+2025-04-29 21:59:17,464 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in European Union: 2046-12-31
+2025-04-29 21:59:17,465 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in European Union: 2001-12-31
+2025-04-29 21:59:17,465 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in European Union: 1887-12-31
+2025-04-29 21:59:17,466 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in European Union: 2007-12-31
+2025-04-29 21:59:17,466 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in European Union: 2010-12-31
+2025-04-29 21:59:17,467 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in European Union: 2004-12-31
+2025-04-29 21:59:17,467 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in European Union: 2019-12-31
+2025-04-29 21:59:17,468 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in Japan: 2020-12-31
+2025-04-29 21:59:17,468 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in Japan: 1982-12-31
+2025-04-29 21:59:17,468 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in Japan: 2046-12-31
+2025-04-29 21:59:17,468 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in Japan: 2001-12-31
+2025-04-29 21:59:17,469 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in Japan: 1887-12-31
+2025-04-29 21:59:17,469 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in Japan: 2007-12-31
+2025-04-29 21:59:17,469 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in Japan: 2010-12-31
+2025-04-29 21:59:17,469 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in Japan: 2004-12-31
+2025-04-29 21:59:17,469 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in Japan: 2019-12-31
+2025-04-29 21:59:17,469 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 100 years in Mexico: 2050-12-31
+2025-04-29 21:59:17,469 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 100 years in Mexico: 2012-12-31
+2025-04-29 21:59:17,470 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 100 years in Mexico: 2076-12-31
+2025-04-29 21:59:17,470 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 100 years in Mexico: 2031-12-31
+2025-04-29 21:59:17,470 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 100 years in Mexico: 1917-12-31
+2025-04-29 21:59:17,470 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 100 years in Mexico: 2037-12-31
+2025-04-29 21:59:17,470 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 100 years in Mexico: 2040-12-31
+2025-04-29 21:59:17,470 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 100 years in Mexico: 2034-12-31
+2025-04-29 21:59:17,470 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 100 years in Mexico: 2049-12-31
+2025-04-29 21:59:17,471 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in United Kingdom: 2020-12-31
+2025-04-29 21:59:17,472 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in United Kingdom: 1982-12-31
+2025-04-29 21:59:17,472 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in United Kingdom: 2046-12-31
+2025-04-29 21:59:17,473 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in United Kingdom: 2001-12-31
+2025-04-29 21:59:17,473 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in United Kingdom: 1887-12-31
+2025-04-29 21:59:17,474 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in United Kingdom: 2007-12-31
+2025-04-29 21:59:17,474 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in United Kingdom: 2010-12-31
+2025-04-29 21:59:17,475 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in United Kingdom: 2004-12-31
+2025-04-29 21:59:17,476 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in United Kingdom: 2019-12-31
+2025-04-29 21:59:17,476 - src.scheduler - INFO - '1984' expires on 2044-12-31 in US (published 1923-1977)
+2025-04-29 21:59:17,477 - src.scheduler - INFO - 'Dracula' is in public domain in US (published before 1923)
+2025-04-29 21:59:17,478 - src.scheduler - INFO - 'Metropolis' expires on 2022-12-31 in US (published 1923-1977)
+2025-04-29 21:59:17,478 - src.scheduler - INFO - 'Nosferatu' is in public domain in US (published before 1923)
+2025-04-29 21:59:17,479 - src.scheduler - INFO - 'Pride and Prejudice' is in public domain in US (published before 1923)
+2025-04-29 21:59:17,479 - src.scheduler - INFO - 'Rhapsody in Blue' expires on 2019-12-31 in US (published 1923-1977)
+2025-04-29 21:59:17,480 - src.scheduler - INFO - 'The Great Gatsby' expires on 2020-12-31 in US (published 1923-1977)
+2025-04-29 21:59:17,480 - src.scheduler - INFO - 'The Planets' is in public domain in US (published before 1923)
+2025-04-29 21:59:17,481 - src.scheduler - INFO - 'The Wizard of Oz' expires on 2034-12-31 in US (published 1923-1977)
+2025-04-29 21:59:17,481 - __main__ - INFO - Application finished.
+2025-04-29 22:09:32,780 - __main__ - INFO - Application started.
+2025-04-29 22:09:32,781 - __main__ - INFO - Initializing system...
+2025-04-29 22:09:32,781 - src.database - INFO - Initializing database at D:\CODE\PROJECTS\free-author-rights-schedulle\data\copyright_data.db
+2025-04-29 22:09:32,783 - src.database - INFO - Database initialized successfully.
+2025-04-29 22:09:32,794 - __main__ - INFO - Added/verified topic: Books
+2025-04-29 22:09:32,798 - __main__ - INFO - Added/verified topic: Movies
+2025-04-29 22:09:32,802 - __main__ - INFO - Added/verified topic: Music
+2025-04-29 22:09:32,807 - src.database - INFO - Default jurisdictions and copyright rules initialized
+2025-04-29 22:09:32,808 - __main__ - INFO - System initialized.
+2025-04-29 22:09:32,810 - src.database - INFO - Retrieved 24 works from database
+2025-04-29 22:09:32,811 - __main__ - INFO - Generating schedule...
+2025-04-29 22:09:32,812 - src.database - INFO - Retrieved 3 works expiring on or before 2026-04-29
+2025-04-29 22:09:32,813 - src.database - INFO - Retrieved 8 public domain works
+2025-04-29 22:09:32,817 - src.database - INFO - Retrieved 24 works from database
+2025-04-29 22:09:32,818 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 50 years in Canada: 2000-12-31
+2025-04-29 22:09:32,818 - src.scheduler - INFO - Estimated expiry for 'A Fire Upon the Deep' based on life + 50 years in Canada: 2074-12-31
+2025-04-29 22:09:32,818 - src.scheduler - INFO - Estimated expiry for 'A Raisin in the Sun' based on life + 50 years in Canada: 2015-12-31
+2025-04-29 22:09:32,818 - src.scheduler - INFO - Estimated expiry for 'Death of a Salesman' based on life + 50 years in Canada: 2055-12-31
+2025-04-29 22:09:32,818 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 50 years in Canada: 1962-12-31
+2025-04-29 22:09:32,818 - src.scheduler - INFO - Estimated expiry for 'Dune' based on life + 50 years in Canada: 2036-12-31
+2025-04-29 22:09:32,818 - src.scheduler - INFO - Estimated expiry for 'Leaves of Grass' based on life + 50 years in Canada: 1942-12-31
+2025-04-29 22:09:32,818 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 50 years in Canada: 2026-12-31
+2025-04-29 22:09:32,819 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 50 years in Canada: 1981-12-31
+2025-04-29 22:09:32,819 - src.scheduler - INFO - Estimated expiry for 'Oedipus Rex' based on life + 50 years in Canada: 0456-12-31
+2025-04-29 22:09:32,819 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 50 years in Canada: 1867-12-31
+2025-04-29 22:09:32,819 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 50 years in Canada: 1987-12-31
+2025-04-29 22:09:32,819 - src.scheduler - INFO - Estimated expiry for 'Shakespeare's Sonnets' based on life + 50 years in Canada: 1666-12-31
+2025-04-29 22:09:32,819 - src.scheduler - INFO - Estimated expiry for 'Snow Crash' based on creation + 50 years in Canada: 2041-12-31
+2025-04-29 22:09:32,819 - src.scheduler - INFO - Estimated expiry for 'The Divine Comedy' based on life + 50 years in Canada: 1371-12-31
+2025-04-29 22:09:32,819 - src.scheduler - WARNING - Cannot reliably calculate expiry for 'The Epic of Gilgamesh': Author death date(s) unknown.
+2025-04-29 22:09:32,819 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 50 years in Canada: 1990-12-31
+2025-04-29 22:09:32,819 - src.scheduler - INFO - Estimated expiry for 'The Handmaid's Tale' based on creation + 50 years in Canada: 2034-12-31
+2025-04-29 22:09:32,820 - src.scheduler - WARNING - Cannot reliably calculate expiry for 'The Iliad': Author death date(s) unknown.
+2025-04-29 22:09:32,820 - src.scheduler - INFO - Estimated expiry for 'The Importance of Being Earnest' based on life + 50 years in Canada: 1950-12-31
+2025-04-29 22:09:32,820 - src.scheduler - INFO - Estimated expiry for 'The Martian' based on creation + 50 years in Canada: 2059-12-31
+2025-04-29 22:09:32,820 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 50 years in Canada: 1984-12-31
+2025-04-29 22:09:32,820 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 50 years in Canada: 1999-12-31
+2025-04-29 22:09:32,820 - src.scheduler - INFO - Estimated expiry for 'Waiting for Godot' based on life + 50 years in Canada: 2039-12-31
+2025-04-29 22:09:32,821 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in European Union: 2020-12-31
+2025-04-29 22:09:32,822 - src.scheduler - INFO - Estimated expiry for 'A Fire Upon the Deep' based on life + 70 years in European Union: 2094-12-31
+2025-04-29 22:09:32,822 - src.scheduler - INFO - Estimated expiry for 'A Raisin in the Sun' based on life + 70 years in European Union: 2035-12-31
+2025-04-29 22:09:32,823 - src.scheduler - INFO - Estimated expiry for 'Death of a Salesman' based on life + 70 years in European Union: 2075-12-31
+2025-04-29 22:09:32,824 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in European Union: 1982-12-31
+2025-04-29 22:09:32,824 - src.scheduler - INFO - Estimated expiry for 'Dune' based on life + 70 years in European Union: 2056-12-31
+2025-04-29 22:09:32,825 - src.scheduler - INFO - Estimated expiry for 'Leaves of Grass' based on life + 70 years in European Union: 1962-12-31
+2025-04-29 22:09:32,826 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in European Union: 2046-12-31
+2025-04-29 22:09:32,826 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in European Union: 2001-12-31
+2025-04-29 22:09:32,827 - src.scheduler - INFO - Estimated expiry for 'Oedipus Rex' based on life + 70 years in European Union: 0476-12-31
+2025-04-29 22:09:32,827 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in European Union: 1887-12-31
+2025-04-29 22:09:32,828 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in European Union: 2007-12-31
+2025-04-29 22:09:32,828 - src.scheduler - INFO - Estimated expiry for 'Shakespeare's Sonnets' based on life + 70 years in European Union: 1686-12-31
+2025-04-29 22:09:32,829 - src.scheduler - INFO - Estimated expiry for 'Snow Crash' based on creation + 70 years in European Union: 2061-12-31
+2025-04-29 22:09:32,829 - src.scheduler - INFO - Estimated expiry for 'The Divine Comedy' based on life + 70 years in European Union: 1391-12-31
+2025-04-29 22:09:32,830 - src.scheduler - WARNING - Cannot reliably calculate expiry for 'The Epic of Gilgamesh': Author death date(s) unknown.
+2025-04-29 22:09:32,830 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in European Union: 2010-12-31
+2025-04-29 22:09:32,831 - src.scheduler - INFO - Estimated expiry for 'The Handmaid's Tale' based on creation + 70 years in European Union: 2054-12-31
+2025-04-29 22:09:32,831 - src.scheduler - WARNING - Cannot reliably calculate expiry for 'The Iliad': Author death date(s) unknown.
+2025-04-29 22:09:32,832 - src.scheduler - INFO - Estimated expiry for 'The Importance of Being Earnest' based on life + 70 years in European Union: 1970-12-31
+2025-04-29 22:09:32,832 - src.scheduler - INFO - Estimated expiry for 'The Martian' based on creation + 70 years in European Union: 2079-12-31
+2025-04-29 22:09:32,833 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in European Union: 2004-12-31
+2025-04-29 22:09:32,834 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in European Union: 2019-12-31
+2025-04-29 22:09:32,834 - src.scheduler - INFO - Estimated expiry for 'Waiting for Godot' based on life + 70 years in European Union: 2059-12-31
+2025-04-29 22:09:32,835 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in Japan: 2020-12-31
+2025-04-29 22:09:32,835 - src.scheduler - INFO - Estimated expiry for 'A Fire Upon the Deep' based on life + 70 years in Japan: 2094-12-31
+2025-04-29 22:09:32,835 - src.scheduler - INFO - Estimated expiry for 'A Raisin in the Sun' based on life + 70 years in Japan: 2035-12-31
+2025-04-29 22:09:32,835 - src.scheduler - INFO - Estimated expiry for 'Death of a Salesman' based on life + 70 years in Japan: 2075-12-31
+2025-04-29 22:09:32,835 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in Japan: 1982-12-31
+2025-04-29 22:09:32,835 - src.scheduler - INFO - Estimated expiry for 'Dune' based on life + 70 years in Japan: 2056-12-31
+2025-04-29 22:09:32,836 - src.scheduler - INFO - Estimated expiry for 'Leaves of Grass' based on life + 70 years in Japan: 1962-12-31
+2025-04-29 22:09:32,836 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in Japan: 2046-12-31
+2025-04-29 22:09:32,836 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in Japan: 2001-12-31
+2025-04-29 22:09:32,836 - src.scheduler - INFO - Estimated expiry for 'Oedipus Rex' based on life + 70 years in Japan: 0476-12-31
+2025-04-29 22:09:32,836 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in Japan: 1887-12-31
+2025-04-29 22:09:32,836 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in Japan: 2007-12-31
+2025-04-29 22:09:32,836 - src.scheduler - INFO - Estimated expiry for 'Shakespeare's Sonnets' based on life + 70 years in Japan: 1686-12-31
+2025-04-29 22:09:32,836 - src.scheduler - INFO - Estimated expiry for 'Snow Crash' based on creation + 70 years in Japan: 2061-12-31
+2025-04-29 22:09:32,836 - src.scheduler - INFO - Estimated expiry for 'The Divine Comedy' based on life + 70 years in Japan: 1391-12-31
+2025-04-29 22:09:32,836 - src.scheduler - WARNING - Cannot reliably calculate expiry for 'The Epic of Gilgamesh': Author death date(s) unknown.
+2025-04-29 22:09:32,837 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in Japan: 2010-12-31
+2025-04-29 22:09:32,837 - src.scheduler - INFO - Estimated expiry for 'The Handmaid's Tale' based on creation + 70 years in Japan: 2054-12-31
+2025-04-29 22:09:32,837 - src.scheduler - WARNING - Cannot reliably calculate expiry for 'The Iliad': Author death date(s) unknown.
+2025-04-29 22:09:32,837 - src.scheduler - INFO - Estimated expiry for 'The Importance of Being Earnest' based on life + 70 years in Japan: 1970-12-31
+2025-04-29 22:09:32,837 - src.scheduler - INFO - Estimated expiry for 'The Martian' based on creation + 70 years in Japan: 2079-12-31
+2025-04-29 22:09:32,837 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in Japan: 2004-12-31
+2025-04-29 22:09:32,837 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in Japan: 2019-12-31
+2025-04-29 22:09:32,837 - src.scheduler - INFO - Estimated expiry for 'Waiting for Godot' based on life + 70 years in Japan: 2059-12-31
+2025-04-29 22:09:32,838 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 100 years in Mexico: 2050-12-31
+2025-04-29 22:09:32,838 - src.scheduler - INFO - Estimated expiry for 'A Fire Upon the Deep' based on life + 100 years in Mexico: 2124-12-31
+2025-04-29 22:09:32,838 - src.scheduler - INFO - Estimated expiry for 'A Raisin in the Sun' based on life + 100 years in Mexico: 2065-12-31
+2025-04-29 22:09:32,838 - src.scheduler - INFO - Estimated expiry for 'Death of a Salesman' based on life + 100 years in Mexico: 2105-12-31
+2025-04-29 22:09:32,838 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 100 years in Mexico: 2012-12-31
+2025-04-29 22:09:32,839 - src.scheduler - INFO - Estimated expiry for 'Dune' based on life + 100 years in Mexico: 2086-12-31
+2025-04-29 22:09:32,839 - src.scheduler - INFO - Estimated expiry for 'Leaves of Grass' based on life + 100 years in Mexico: 1992-12-31
+2025-04-29 22:09:32,839 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 100 years in Mexico: 2076-12-31
+2025-04-29 22:09:32,839 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 100 years in Mexico: 2031-12-31
+2025-04-29 22:09:32,839 - src.scheduler - INFO - Estimated expiry for 'Oedipus Rex' based on life + 100 years in Mexico: 0506-12-31
+2025-04-29 22:09:32,839 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 100 years in Mexico: 1917-12-31
+2025-04-29 22:09:32,839 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 100 years in Mexico: 2037-12-31
+2025-04-29 22:09:32,839 - src.scheduler - INFO - Estimated expiry for 'Shakespeare's Sonnets' based on life + 100 years in Mexico: 1716-12-31
+2025-04-29 22:09:32,839 - src.scheduler - INFO - Estimated expiry for 'Snow Crash' based on creation + 100 years in Mexico: 2091-12-31
+2025-04-29 22:09:32,840 - src.scheduler - INFO - Estimated expiry for 'The Divine Comedy' based on life + 100 years in Mexico: 1421-12-31
+2025-04-29 22:09:32,840 - src.scheduler - WARNING - Cannot reliably calculate expiry for 'The Epic of Gilgamesh': Author death date(s) unknown.
+2025-04-29 22:09:32,840 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 100 years in Mexico: 2040-12-31
+2025-04-29 22:09:32,840 - src.scheduler - INFO - Estimated expiry for 'The Handmaid's Tale' based on creation + 100 years in Mexico: 2084-12-31
+2025-04-29 22:09:32,840 - src.scheduler - WARNING - Cannot reliably calculate expiry for 'The Iliad': Author death date(s) unknown.
+2025-04-29 22:09:32,840 - src.scheduler - INFO - Estimated expiry for 'The Importance of Being Earnest' based on life + 100 years in Mexico: 2000-12-31
+2025-04-29 22:09:32,840 - src.scheduler - INFO - Estimated expiry for 'The Martian' based on creation + 100 years in Mexico: 2109-12-31
+2025-04-29 22:09:32,840 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 100 years in Mexico: 2034-12-31
+2025-04-29 22:09:32,840 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 100 years in Mexico: 2049-12-31
+2025-04-29 22:09:32,841 - src.scheduler - INFO - Estimated expiry for 'Waiting for Godot' based on life + 100 years in Mexico: 2089-12-31
+2025-04-29 22:09:32,841 - src.scheduler - INFO - Estimated expiry for '1984' based on life + 70 years in United Kingdom: 2020-12-31
+2025-04-29 22:09:32,842 - src.scheduler - INFO - Estimated expiry for 'A Fire Upon the Deep' based on life + 70 years in United Kingdom: 2094-12-31
+2025-04-29 22:09:32,842 - src.scheduler - INFO - Estimated expiry for 'A Raisin in the Sun' based on life + 70 years in United Kingdom: 2035-12-31
+2025-04-29 22:09:32,843 - src.scheduler - INFO - Estimated expiry for 'Death of a Salesman' based on life + 70 years in United Kingdom: 2075-12-31
+2025-04-29 22:09:32,845 - src.scheduler - INFO - Estimated expiry for 'Dracula' based on life + 70 years in United Kingdom: 1982-12-31
+2025-04-29 22:09:32,845 - src.scheduler - INFO - Estimated expiry for 'Dune' based on life + 70 years in United Kingdom: 2056-12-31
+2025-04-29 22:09:32,846 - src.scheduler - INFO - Estimated expiry for 'Leaves of Grass' based on life + 70 years in United Kingdom: 1962-12-31
+2025-04-29 22:09:32,846 - src.scheduler - INFO - Estimated expiry for 'Metropolis' based on life + 70 years in United Kingdom: 2046-12-31
+2025-04-29 22:09:32,847 - src.scheduler - INFO - Estimated expiry for 'Nosferatu' based on life + 70 years in United Kingdom: 2001-12-31
+2025-04-29 22:09:32,847 - src.scheduler - INFO - Estimated expiry for 'Oedipus Rex' based on life + 70 years in United Kingdom: 0476-12-31
+2025-04-29 22:09:32,848 - src.scheduler - INFO - Estimated expiry for 'Pride and Prejudice' based on life + 70 years in United Kingdom: 1887-12-31
+2025-04-29 22:09:32,848 - src.scheduler - INFO - Estimated expiry for 'Rhapsody in Blue' based on life + 70 years in United Kingdom: 2007-12-31
+2025-04-29 22:09:32,849 - src.scheduler - INFO - Estimated expiry for 'Shakespeare's Sonnets' based on life + 70 years in United Kingdom: 1686-12-31
+2025-04-29 22:09:32,850 - src.scheduler - INFO - Estimated expiry for 'Snow Crash' based on creation + 70 years in United Kingdom: 2061-12-31
+2025-04-29 22:09:32,850 - src.scheduler - INFO - Estimated expiry for 'The Divine Comedy' based on life + 70 years in United Kingdom: 1391-12-31
+2025-04-29 22:09:32,851 - src.scheduler - WARNING - Cannot reliably calculate expiry for 'The Epic of Gilgamesh': Author death date(s) unknown.
+2025-04-29 22:09:32,851 - src.scheduler - INFO - Estimated expiry for 'The Great Gatsby' based on life + 70 years in United Kingdom: 2010-12-31
+2025-04-29 22:09:32,852 - src.scheduler - INFO - Estimated expiry for 'The Handmaid's Tale' based on creation + 70 years in United Kingdom: 2054-12-31
+2025-04-29 22:09:32,852 - src.scheduler - WARNING - Cannot reliably calculate expiry for 'The Iliad': Author death date(s) unknown.
+2025-04-29 22:09:32,853 - src.scheduler - INFO - Estimated expiry for 'The Importance of Being Earnest' based on life + 70 years in United Kingdom: 1970-12-31
+2025-04-29 22:09:32,853 - src.scheduler - INFO - Estimated expiry for 'The Martian' based on creation + 70 years in United Kingdom: 2079-12-31
+2025-04-29 22:09:32,854 - src.scheduler - INFO - Estimated expiry for 'The Planets' based on life + 70 years in United Kingdom: 2004-12-31
+2025-04-29 22:09:32,854 - src.scheduler - INFO - Estimated expiry for 'The Wizard of Oz' based on life + 70 years in United Kingdom: 2019-12-31
+2025-04-29 22:09:32,855 - src.scheduler - INFO - Estimated expiry for 'Waiting for Godot' based on life + 70 years in United Kingdom: 2059-12-31
+2025-04-29 22:09:32,856 - src.scheduler - INFO - '1984' expires on 2044-12-31 in US (published 1923-1977)
+2025-04-29 22:09:32,856 - src.scheduler - INFO - Estimated expiry for 'A Fire Upon the Deep' based on life + 70 years in United States: 2094-12-31
+2025-04-29 22:09:32,857 - src.scheduler - INFO - 'A Raisin in the Sun' expires on 2054-12-31 in US (published 1923-1977)
+2025-04-29 22:09:32,857 - src.scheduler - INFO - 'Death of a Salesman' expires on 2044-12-31 in US (published 1923-1977)
+2025-04-29 22:09:32,858 - src.scheduler - INFO - 'Dracula' is in public domain in US (published before 1923)
+2025-04-29 22:09:32,858 - src.scheduler - INFO - 'Dune' expires on 2058-12-31 in US (published 1923-1977)
+2025-04-29 22:09:32,859 - src.scheduler - INFO - Estimated expiry for 'Leaves of Grass' based on life + 70 years in United States: 1962-12-31
+2025-04-29 22:09:32,860 - src.scheduler - INFO - 'Metropolis' expires on 2022-12-31 in US (published 1923-1977)
+2025-04-29 22:09:32,860 - src.scheduler - INFO - 'Nosferatu' is in public domain in US (published before 1923)
+2025-04-29 22:09:32,861 - src.scheduler - INFO - 'Oedipus Rex' is in public domain in US (published before 1923)
+2025-04-29 22:09:32,861 - src.scheduler - INFO - 'Pride and Prejudice' is in public domain in US (published before 1923)
+2025-04-29 22:09:32,862 - src.scheduler - INFO - 'Rhapsody in Blue' expires on 2019-12-31 in US (published 1923-1977)
+2025-04-29 22:09:32,862 - src.scheduler - INFO - Estimated expiry for 'Shakespeare's Sonnets' based on life + 70 years in United States: 1686-12-31
+2025-04-29 22:09:32,863 - src.scheduler - INFO - Estimated expiry for 'Snow Crash' based on creation + 95 years in United States: 2086-12-31
+2025-04-29 22:09:32,863 - src.scheduler - INFO - Estimated expiry for 'The Divine Comedy' based on life + 70 years in United States: 1391-12-31
+2025-04-29 22:09:32,864 - src.scheduler - WARNING - Cannot reliably calculate expiry for 'The Epic of Gilgamesh': Author death date(s) unknown.
+2025-04-29 22:09:32,864 - src.scheduler - INFO - 'The Great Gatsby' expires on 2020-12-31 in US (published 1923-1977)
+2025-04-29 22:09:32,865 - src.scheduler - INFO - Estimated expiry for 'The Handmaid's Tale' based on creation + 95 years in United States: 2079-12-31
+2025-04-29 22:09:32,865 - src.scheduler - WARNING - Cannot reliably calculate expiry for 'The Iliad': Author death date(s) unknown.
+2025-04-29 22:09:32,866 - src.scheduler - INFO - 'The Importance of Being Earnest' is in public domain in US (published before 1923)
+2025-04-29 22:09:32,867 - src.scheduler - INFO - Estimated expiry for 'The Martian' based on creation + 95 years in United States: 2104-12-31
+2025-04-29 22:09:32,867 - src.scheduler - INFO - 'The Planets' is in public domain in US (published before 1923)
+2025-04-29 22:09:32,868 - src.scheduler - INFO - 'The Wizard of Oz' expires on 2034-12-31 in US (published 1923-1977)
+2025-04-29 22:09:32,868 - src.scheduler - INFO - 'Waiting for Godot' expires on 2043-12-31 in US (published 1923-1977)
+2025-04-29 22:09:32,869 - __main__ - INFO - Application finished.
+2025-04-29 22:32:36,861 - __main__ - INFO - Application started.
+2025-04-29 22:32:36,862 - __main__ - INFO - Initializing system...
+2025-04-29 22:32:36,862 - src.database - INFO - Initializing database at D:\CODE\PROJECTS\free-author-rights-schedulle\data\copyright_data.db
+2025-04-29 22:32:36,864 - src.database - INFO - Database initialized successfully.
+2025-04-29 22:32:36,874 - __main__ - INFO - Added/verified topic: Books
+2025-04-29 22:32:36,879 - __main__ - INFO - Added/verified topic: Movies
+2025-04-29 22:32:36,883 - __main__ - INFO - Added/verified topic: Music
+2025-04-29 22:32:36,888 - src.database - INFO - Default jurisdictions and copyright rules initialized
+2025-04-29 22:32:36,888 - __main__ - INFO - System initialized.
+2025-04-29 22:32:36,890 - src.database - INFO - Retrieved 4 works from database
+2025-04-29 22:32:36,890 - __main__ - INFO - Generating schedule...
+2025-04-29 22:32:36,890 - src.database - INFO - Retrieved 0 works expiring on or before 2026-04-29
+2025-04-29 22:32:36,891 - src.database - INFO - Retrieved 0 public domain works
+2025-04-29 22:33:31,851 - __main__ - INFO - Application started.
+2025-04-29 22:33:31,851 - __main__ - INFO - Initializing system...
+2025-04-29 22:33:31,852 - src.database - INFO - Initializing database at D:\CODE\PROJECTS\free-author-rights-schedulle\data\copyright_data.db
+2025-04-29 22:33:31,853 - src.database - INFO - Database initialized successfully.
+2025-04-29 22:33:31,856 - __main__ - INFO - Added/verified topic: Books
+2025-04-29 22:33:31,860 - __main__ - INFO - Added/verified topic: Movies
+2025-04-29 22:33:31,865 - __main__ - INFO - Added/verified topic: Music
+2025-04-29 22:33:31,871 - src.database - INFO - Default jurisdictions and copyright rules initialized
+2025-04-29 22:33:31,871 - __main__ - INFO - System initialized.
+2025-04-29 22:33:31,872 - src.database - INFO - Retrieved 4 works from database
+2025-04-29 22:33:31,872 - __main__ - INFO - Generating schedule...
+2025-04-29 22:33:31,873 - src.database - INFO - Retrieved 0 works expiring on or before 2026-04-29
+2025-04-29 22:33:31,873 - src.database - INFO - Retrieved 0 public domain works
+2025-04-29 22:33:31,874 - src.database - INFO - Retrieved 4 works from database
+2025-04-29 22:35:11,137 - __main__ - INFO - Application started.
+2025-04-29 22:35:11,137 - __main__ - INFO - Initializing system...
+2025-04-29 22:35:11,137 - src.database - INFO - Initializing database at D:\CODE\PROJECTS\free-author-rights-schedulle\data\copyright_data.db
+2025-04-29 22:35:11,139 - src.database - INFO - Database initialized successfully.
+2025-04-29 22:35:11,149 - __main__ - INFO - Added/verified topic: Books
+2025-04-29 22:35:11,153 - __main__ - INFO - Added/verified topic: Movies
+2025-04-29 22:35:11,158 - __main__ - INFO - Added/verified topic: Music
+2025-04-29 22:35:11,163 - src.database - INFO - Default jurisdictions and copyright rules initialized
+2025-04-29 22:35:11,164 - __main__ - INFO - System initialized.
+2025-04-29 22:35:11,165 - src.database - INFO - Retrieved 4 works from database
+2025-04-29 22:35:11,165 - __main__ - INFO - Generating schedule...
+2025-04-29 22:35:11,165 - src.database - INFO - Retrieved 0 works expiring on or before 2026-04-29
+2025-04-29 22:35:11,166 - src.database - INFO - Retrieved 0 public domain works
+2025-04-29 22:35:11,167 - src.database - INFO - Retrieved 4 works from database
+2025-04-29 22:35:27,881 - __main__ - INFO - Application started.
+2025-04-29 22:35:27,881 - __main__ - INFO - Initializing system...
+2025-04-29 22:35:27,882 - src.database - INFO - Initializing database at D:\CODE\PROJECTS\free-author-rights-schedulle\data\copyright_data.db
+2025-04-29 22:35:27,883 - src.database - INFO - Database initialized successfully.
+2025-04-29 22:35:27,886 - __main__ - INFO - Added/verified topic: Books
+2025-04-29 22:35:27,891 - __main__ - INFO - Added/verified topic: Movies
+2025-04-29 22:35:27,895 - __main__ - INFO - Added/verified topic: Music
+2025-04-29 22:35:27,901 - src.database - INFO - Default jurisdictions and copyright rules initialized
+2025-04-29 22:35:27,901 - __main__ - INFO - System initialized.
+2025-04-29 22:35:27,902 - src.database - INFO - Retrieved 4 works from database
+2025-04-29 22:35:27,903 - __main__ - INFO - Generating schedule...
+2025-04-29 22:35:27,903 - src.database - INFO - Retrieved 0 works expiring on or before 2026-04-29
+2025-04-29 22:35:27,904 - src.database - INFO - Retrieved 0 public domain works
+2025-04-29 22:35:27,904 - src.database - INFO - Retrieved 4 works from database
+2025-04-29 22:35:44,151 - __main__ - INFO - Application started.
+2025-04-29 22:35:44,151 - __main__ - INFO - Initializing system...
+2025-04-29 22:35:44,151 - src.database - INFO - Initializing database at D:\CODE\PROJECTS\free-author-rights-schedulle\data\copyright_data.db
+2025-04-29 22:35:44,152 - src.database - INFO - Database initialized successfully.
+2025-04-29 22:35:44,162 - __main__ - INFO - Added/verified topic: Books
+2025-04-29 22:35:44,167 - __main__ - INFO - Added/verified topic: Movies
+2025-04-29 22:35:44,171 - __main__ - INFO - Added/verified topic: Music
+2025-04-29 22:35:44,177 - src.database - INFO - Default jurisdictions and copyright rules initialized
+2025-04-29 22:35:44,177 - __main__ - INFO - System initialized.
+2025-04-29 22:35:44,178 - src.database - INFO - Retrieved 4 works from database
+2025-04-29 22:35:44,178 - __main__ - INFO - Generating schedule...
+2025-04-29 22:35:44,179 - src.database - INFO - Retrieved 0 works expiring on or before 2026-04-29
+2025-04-29 22:35:44,180 - src.database - INFO - Retrieved 0 public domain works
+2025-04-29 22:35:44,180 - src.database - INFO - Retrieved 4 works from database
+2025-04-29 22:37:27,963 - __main__ - INFO - Application started.
+2025-04-29 22:37:27,963 - __main__ - INFO - Initializing system...
+2025-04-29 22:37:27,964 - src.database - INFO - Initializing database at D:\CODE\PROJECTS\free-author-rights-schedulle\data\copyright_data.db
+2025-04-29 22:37:27,965 - src.database - INFO - Database initialized successfully.
+2025-04-29 22:37:27,969 - __main__ - INFO - Added/verified topic: Books
+2025-04-29 22:37:27,973 - __main__ - INFO - Added/verified topic: Movies
+2025-04-29 22:37:27,978 - __main__ - INFO - Added/verified topic: Music
+2025-04-29 22:37:27,983 - src.database - INFO - Default jurisdictions and copyright rules initialized
+2025-04-29 22:37:27,983 - __main__ - INFO - System initialized.
+2025-04-29 22:37:27,984 - src.database - INFO - Retrieved 4 works from database
+2025-04-29 22:37:27,985 - __main__ - INFO - Generating schedule...
+2025-04-29 22:37:27,985 - src.database - INFO - Retrieved 0 works expiring on or before 2026-04-29
+2025-04-29 22:37:27,986 - src.database - INFO - Retrieved 0 public domain works
+2025-04-29 22:37:27,987 - src.database - INFO - Retrieved 4 works from database
+2025-04-29 22:37:27,997 - __main__ - INFO - Application finished.

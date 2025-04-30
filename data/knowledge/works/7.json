@@ -1,0 +1,23 @@
+{
+  "id": 7,
+  "title": "The Iliad",
+  "authors": [
+    "Homer (c. 8th century BC)",
+    "Unknown Oral Tradition"
+  ],
+  "creation_date": "0800-00-00",
+  "publication_date": "0762-00-00",
+  "topic": "Epic Poetry",
+  "secondary_topics": [
+    "War",
+    "Honor",
+    "Fate",
+    "The Gods",
+    "Heroism"
+  ],
+  "description": "The Iliad, attributed to Homer, is an ancient Greek epic poem set during the Trojan War. It focuses on the wrath of Achilles and its consequences for the Achaean army, exploring themes of honor, fate, and the destructive nature of war. The poem is foundational to Western literature and continues to be studied for its insights into human nature and ancient Greek society.",
+  "is_collaborative": true,
+  "original_language": "Ancient Greek",
+  "original_publisher": "Oral Tradition (later written down)",
+  "source_url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0133"
+}

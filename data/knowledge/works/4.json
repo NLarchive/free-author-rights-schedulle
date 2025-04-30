@@ -1,0 +1,21 @@
+{
+  "id": 4,
+  "title": "The Martian",
+  "authors": [
+    "Andy Weir"
+  ],
+  "creation_date": "2009-01-01",
+  "publication_date": "2011-02-07",
+  "topic": "Hard Science Fiction",
+  "secondary_topics": [
+    "Space Exploration",
+    "Survival",
+    "Engineering",
+    "Botany"
+  ],
+  "description": "During a manned mission to Mars, astronaut Mark Watney is presumed dead and left behind by his crew after a severe storm. He must use his ingenuity, scientific knowledge, and limited resources to survive until a rescue mission can be mounted. The story is told through Watney's log entries, detailing his efforts to find food, water, and communication with Earth.",
+  "is_collaborative": false,
+  "original_language": "English",
+  "original_publisher": "Crown Publishing Group",
+  "source_url": "https://www.andyweirauthor.com/books/the-martian"
+}

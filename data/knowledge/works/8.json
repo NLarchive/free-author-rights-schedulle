@@ -1,0 +1,22 @@
+{
+  "id": 8,
+  "title": "The Divine Comedy",
+  "authors": [
+    "Dante Alighieri (1265-05-29 - 1321-09-14)"
+  ],
+  "creation_date": "1308-00-00",
+  "publication_date": "1320-00-00",
+  "topic": "Epic Poetry",
+  "secondary_topics": [
+    "Religion",
+    "Morality",
+    "Politics",
+    "Philosophy",
+    "Allegory"
+  ],
+  "description": "Dante Alighieri's *The Divine Comedy* is a long narrative poem divided into three parts: *Inferno* (Hell), *Purgatorio* (Purgatory), and *Paradiso* (Paradise). It depicts Dante's allegorical journey through the afterlife, guided by Virgil and later Beatrice, exploring themes of sin, redemption, and the nature of God. The poem is a cornerstone of Italian literature and a profound exploration of medieval Christian beliefs.",
+  "is_collaborative": false,
+  "original_language": "Italian",
+  "original_publisher": "Unknown (likely private publication)",
+  "source_url": "https://dantelab.dartmouth.edu/reading/text-table/"
+}

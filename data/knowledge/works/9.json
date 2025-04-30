@@ -1,0 +1,22 @@
+{
+  "id": 9,
+  "title": "Shakespeare's Sonnets",
+  "authors": [
+    "William Shakespeare (1564-04-26 - 1616-04-23)"
+  ],
+  "creation_date": "1590-00-00",
+  "publication_date": "1609-00-00",
+  "topic": "Sonnets",
+  "secondary_topics": [
+    "Love",
+    "Beauty",
+    "Time",
+    "Mortality",
+    "Jealousy"
+  ],
+  "description": "Shakespeare's Sonnets are a collection of 154 sonnets dealing with themes of love, beauty, time, and mortality. They are famous for their use of metaphor, imagery, and their exploration of the complexities of human relationships. The sonnets are a cornerstone of English literature and continue to be widely read and studied.",
+  "is_collaborative": false,
+  "original_language": "English",
+  "original_publisher": "Thomas Thorpe",
+  "source_url": "https://www.shakespeare.org.uk/explore-shakespeare/shakespedia/shakespeares-sonnets/"
+}

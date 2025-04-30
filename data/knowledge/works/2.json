@@ -1,0 +1,21 @@
+{
+  "id": 2,
+  "title": "The Handmaid's Tale",
+  "authors": [
+    "Margaret Atwood"
+  ],
+  "creation_date": "1984-01-01",
+  "publication_date": "1985-01-01",
+  "topic": "Dystopian Fiction",
+  "secondary_topics": [
+    "Feminism",
+    "Totalitarianism",
+    "Religious Extremism",
+    "Gender Roles"
+  ],
+  "description": "Set in the Republic of Gilead, a totalitarian regime that has overthrown the U.S. government, The Handmaid's Tale depicts a society where women are subjugated and forced into sexual servitude to bear children for the ruling class. The story follows Offred, a Handmaid who struggles to survive and resist the oppressive regime.  It explores themes of power, control, and the suppression of individual freedom.",
+  "is_collaborative": false,
+  "original_language": "English",
+  "original_publisher": "McClelland and Stewart (Canada), Houghton Mifflin (USA)",
+  "source_url": "https://www.penguinrandomhouse.com/books/306829/the-handmaids-tale-by-margaret-atwood/"
+}

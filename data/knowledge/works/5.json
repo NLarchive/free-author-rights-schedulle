@@ -1,0 +1,21 @@
+{
+  "id": 5,
+  "title": "A Fire Upon the Deep",
+  "authors": [
+    "Vernor Vinge"
+  ],
+  "creation_date": "1990-01-01",
+  "publication_date": "1992-06-01",
+  "topic": "Space Opera",
+  "secondary_topics": [
+    "Singularity",
+    "Artificial Intelligence",
+    "Cosmic Horror",
+    "Galactic Civilizations"
+  ],
+  "description": "In a galaxy divided into Zones of Thought where the laws of physics and the possibilities of technology vary drastically, an ancient and powerful entity is unleashed from its prison. Two children, the sole survivors of an expedition, hold the key to stopping its rampage. Meanwhile, on a planet trapped in the Slow Zone, a medieval civilization must confront its own internal conflicts while preparing for a cosmic threat.",
+  "is_collaborative": false,
+  "original_language": "English",
+  "original_publisher": "Tor Books",
+  "source_url": "https://www.tor.com/2012/06/05/a-fire-upon-the-deep-vernor-vinge/"
+}

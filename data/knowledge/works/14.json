@@ -1,0 +1,22 @@
+{
+  "id": 14,
+  "title": "Waiting for Godot",
+  "authors": [
+    "Samuel Beckett (1906-04-13 \u2013 1989-12-22)"
+  ],
+  "creation_date": "1948-10-01",
+  "publication_date": "1952-01-01",
+  "topic": "Absurdist Drama",
+  "secondary_topics": [
+    "Existentialism",
+    "Meaninglessness",
+    "Hope",
+    "Time",
+    "The Human Condition"
+  ],
+  "description": "Waiting for Godot depicts two men, Vladimir and Estragon, waiting endlessly for someone named Godot, who never arrives. The play embodies the themes of existentialism and the absurdity of human existence, exploring the meaninglessness and repetitiveness of life.",
+  "is_collaborative": false,
+  "original_language": "French",
+  "original_publisher": "Les \u00c9ditions de Minuit",
+  "source_url": "https://www.britannica.com/topic/Waiting-for-Godot"
+}

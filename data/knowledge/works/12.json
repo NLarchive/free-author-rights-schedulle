@@ -1,0 +1,22 @@
+{
+  "id": 12,
+  "title": "The Importance of Being Earnest",
+  "authors": [
+    "Oscar Wilde (1854-10-16 \u2013 1900-11-30)"
+  ],
+  "creation_date": "1895-02-14",
+  "publication_date": "1899-01-01",
+  "topic": "Comedy of Manners",
+  "secondary_topics": [
+    "Victorian Society",
+    "Love",
+    "Deception",
+    "Identity",
+    "Marriage"
+  ],
+  "description": "A trivial comedy for serious people, The Importance of Being Earnest satirizes Victorian social customs and the pursuit of love through elaborate pretense and mistaken identities. The play centers on two young gentlemen, Jack and Algernon, who both assume the fictitious identity of 'Ernest' to win the affections of two young women.",
+  "is_collaborative": false,
+  "original_language": "English",
+  "original_publisher": "Leonard Smithers",
+  "source_url": "https://www.bl.uk/collection-items/the-importance-of-being-earnest-by-oscar-wilde"
+}

@@ -1,0 +1,22 @@
+{
+  "id": 10,
+  "title": "Leaves of Grass",
+  "authors": [
+    "Walt Whitman (1819-05-31 - 1892-03-26)"
+  ],
+  "creation_date": "1855-00-00",
+  "publication_date": "1855-07-04",
+  "topic": "Free Verse Poetry",
+  "secondary_topics": [
+    "Democracy",
+    "Nature",
+    "Individualism",
+    "Spirituality",
+    "The Body"
+  ],
+  "description": "Walt Whitman's *Leaves of Grass* is a collection of poems, constantly revised and expanded throughout his lifetime, that celebrates democracy, nature, and the individual. It is characterized by its free verse style and its embrace of the physical and spiritual aspects of human existence. The collection is a landmark of American poetry and has had a profound influence on subsequent generations of poets.",
+  "is_collaborative": false,
+  "original_language": "English",
+  "original_publisher": "Self-published (first edition)",
+  "source_url": "https://www.poetryfoundation.org/poems-and-poets/poems/detail/76247"
+}

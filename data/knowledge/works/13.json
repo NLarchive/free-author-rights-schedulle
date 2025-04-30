@@ -1,0 +1,22 @@
+{
+  "id": 13,
+  "title": "Death of a Salesman",
+  "authors": [
+    "Arthur Miller (1915-10-17 \u2013 2005-02-10)"
+  ],
+  "creation_date": "1949-02-10",
+  "publication_date": "1949-03-01",
+  "topic": "Tragedy",
+  "secondary_topics": [
+    "The American Dream",
+    "Family",
+    "Success",
+    "Mental Health",
+    "Betrayal"
+  ],
+  "description": "Death of a Salesman portrays the final days of Willy Loman, a traveling salesman struggling with disillusionment and fading relevance in a rapidly changing world. The play explores the pressures of the American Dream and the devastating consequences of chasing an idealized version of success.",
+  "is_collaborative": false,
+  "original_language": "English",
+  "original_publisher": "The Viking Press",
+  "source_url": "https://www.britannica.com/topic/Death-of-a-Salesman"
+}

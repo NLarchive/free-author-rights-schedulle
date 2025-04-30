@@ -1,0 +1,488 @@
+import unittest
+import sys
+import os
+from unittest.mock import patch, MagicMock
+from datetime import date
+import io
+import time
+
+# Fix imports by adding the parent directory to the path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+# Now imports should work properly
+from src.data_models import Work, Author, Jurisdiction, CopyrightRule, Topic
+from src import scheduler
+from src import database # Needed for mocking
+
+# --- Custom Test Result Class ---
+class DetailedTestResult(unittest.TextTestResult):
+    """Custom TestResult class that provides more detailed output for each test."""
+    
+    def __init__(self, stream, descriptions, verbosity):
+        super(DetailedTestResult, self).__init__(stream, descriptions, verbosity)
+        self.stream = stream
+        self.verbosity = verbosity
+        self.success_count = 0
+        self.failure_count = 0
+        self.error_count = 0
+        self.skipped_count = 0
+        self.test_results = []
+        self.execution_time = {}
+    
+    def startTest(self, test):
+        super(DetailedTestResult, self).startTest(test)
+        self.execution_time[test] = time.time()
+    
+    def addSuccess(self, test):
+        super(DetailedTestResult, self).addSuccess(test)
+        self.success_count += 1
+        execution_time = time.time() - self.execution_time[test]
+        self.test_results.append({
+            'test': test,
+            'result': 'PASS',
+            'execution_time': execution_time
+        })
+    
+    def addFailure(self, test, err):
+        super(DetailedTestResult, self).addFailure(test, err)
+        self.failure_count += 1
+        execution_time = time.time() - self.execution_time[test]
+        self.test_results.append({
+            'test': test,
+            'result': 'FAIL',
+            'error': err,
+            'execution_time': execution_time
+        })
+    
+    def addError(self, test, err):
+        super(DetailedTestResult, self).addError(test, err)
+        self.error_count += 1
+        execution_time = time.time() - self.execution_time[test]
+        self.test_results.append({
+            'test': test,
+            'result': 'ERROR',
+            'error': err,
+            'execution_time': execution_time
+        })
+    
+    def addSkip(self, test, reason):
+        super(DetailedTestResult, self).addSkip(test, reason)
+        self.skipped_count += 1
+        execution_time = time.time() - self.execution_time[test]
+        self.test_results.append({
+            'test': test,
+            'result': 'SKIP',
+            'reason': reason,
+            'execution_time': execution_time
+        })
+    
+    def printDetailedReport(self):
+        self.stream.writeln("\n=== DETAILED TEST REPORT ===")
+        
+        # Print summary
+        self.stream.writeln(f"Total Tests: {self.testsRun}")
+        self.stream.writeln(f"Passed: {self.success_count}")
+        self.stream.writeln(f"Failed: {self.failure_count}")
+        self.stream.writeln(f"Errors: {self.error_count}")
+        self.stream.writeln(f"Skipped: {self.skipped_count}")
+        
+        # Print individual test results
+        self.stream.writeln("\n--- Individual Test Results ---")
+        
+        for result in self.test_results:
+            test = result['test']
+            test_name = test.id().split('.')[-1]
+            test_class = test.id().split('.')[-2]
+            execution_time = result['execution_time']
+            
+            # Get the test docstring (description)
+            test_doc = test._testMethodDoc if test._testMethodDoc else "No description provided"
+            
+            self.stream.writeln(f"\n{test_class}.{test_name} ({execution_time:.3f}s): {result['result']}")
+            self.stream.writeln(f"Description: {test_doc}")
+            
+            if result['result'] == 'FAIL' or result['result'] == 'ERROR':
+                self.stream.writeln("Error:")
+                err_type, err_value, _ = result['error']
+                self.stream.writeln(f"{err_type.__name__}: {err_value}")
+            
+            if result['result'] == 'SKIP':
+                self.stream.writeln(f"Reason: {result['reason']}")
+
+class DetailedTestRunner(unittest.TextTestRunner):
+    """Custom TestRunner that uses DetailedTestResult to generate detailed reports."""
+    
+    def __init__(self, stream=None, descriptions=True, verbosity=1,
+                 failfast=False, buffer=False, resultclass=None, warnings=None,
+                 tb_locals=False):
+        if resultclass is None:
+            resultclass = DetailedTestResult
+        super(DetailedTestRunner, self).__init__(
+            stream=stream, descriptions=descriptions, verbosity=verbosity,
+            failfast=failfast, buffer=buffer, resultclass=resultclass,
+            warnings=warnings, tb_locals=tb_locals)
+    
+    def run(self, test):
+        result = super(DetailedTestRunner, self).run(test)
+        result.printDetailedReport()
+        return result
+
+# --- Sample Data ---
+TODAY = date(2025, 4, 29) # Fixed date for consistent testing
+
+# Jurisdictions
+JURISDICTION_US = Jurisdiction(id=1, name="United States", code="US", term_years_after_death=70, has_special_rules=True)
+JURISDICTION_EU = Jurisdiction(id=2, name="European Union", code="EU", term_years_after_death=70, has_special_rules=True)
+JURISDICTION_UK = Jurisdiction(id=3, name="United Kingdom", code="GB", term_years_after_death=70, has_special_rules=True)
+JURISDICTION_CA = Jurisdiction(id=4, name="Canada", code="CA", term_years_after_death=70, has_special_rules=False) # Assuming updated term
+JURISDICTION_DEFAULT = Jurisdiction(id=5, name="Default", code="XX", term_years_after_death=50, has_special_rules=False) # Example with different term
+        expected_expiry = date(1925 + 95, 12, 31) # 2020-12-31
+        expiry = scheduler.apply_special_rules(WORK_PUBLISHED_1925_US, JURISDICTION_US)
+        self.assertEqual(expiry, expected_expiry)
+        mock_db.get_copyright_rules_for_jurisdiction.assert_called_once_with(JURISDICTION_US.id)
+
+    def test_apply_special_rules_us_corporate(self, mock_db):
+        """Test special rules: US corporate work (creation + 95)."""
+        mock_db.get_copyright_rules_for_jurisdiction.return_value = RULES_US
+        # Creation date 1950
+        expected_expiry = date(1950 + 95, 12, 31) # 2045-12-31
+        expiry = scheduler.apply_special_rules(WORK_CORPORATE_CREATED_1950, JURISDICTION_US)
+        self.assertEqual(expiry, expected_expiry)
+        mock_db.get_copyright_rules_for_jurisdiction.assert_called_once_with(JURISDICTION_US.id)
+
+    def test_apply_special_rules_eu_anonymous(self, mock_db):
+        """Test special rules: EU anonymous work (creation + 70)."""
+        mock_db.get_copyright_rules_for_jurisdiction.return_value = RULES_EU
+        # Creation date 1940
+        expected_expiry = date(1940 + 70, 12, 31) # 2010-12-31
+        expiry = scheduler.apply_special_rules(WORK_ANONYMOUS_EU_1940, JURISDICTION_EU)
+        self.assertEqual(expiry, expected_expiry)
+        mock_db.get_copyright_rules_for_jurisdiction.assert_called_once_with(JURISDICTION_EU.id)
+
+    def test_apply_special_rules_eu_collaborative(self, mock_db):
+        """Test special rules: EU collaborative work (last death + 70)."""
+        mock_db.get_copyright_rules_for_jurisdiction.return_value = RULES_EU
+        # Last death 1970
+        expected_expiry = date(1970 + 70, 12, 31) # 2040-12-31
+        expiry = scheduler.apply_special_rules(WORK_COLLABORATIVE_EU_1970, JURISDICTION_EU)
+        self.assertEqual(expiry, expected_expiry)
+        mock_db.get_copyright_rules_for_jurisdiction.assert_called_once_with(JURISDICTION_EU.id)
+
+    def test_apply_special_rules_uk_crown(self, mock_db):
+        """Test special rules: UK Crown copyright (creation + 50)."""
+        mock_db.get_copyright_rules_for_jurisdiction.return_value = RULES_UK
+        # Creation date 1960
+        expected_expiry = date(1960 + 50, 12, 31) # 2010-12-31
+        expiry = scheduler.apply_special_rules(WORK_CROWN_UK_1960, JURISDICTION_UK)
+        self.assertEqual(expiry, expected_expiry)
+        mock_db.get_copyright_rules_for_jurisdiction.assert_called_once_with(JURISDICTION_UK.id)
+
+    def test_apply_special_rules_no_match(self, mock_db):
+        """Test special rules: No special rule applies."""
+        mock_db.get_copyright_rules_for_jurisdiction.return_value = RULES_US # Use US rules
+        # Use a work that doesn't match US special rules (e.g., standard author death)
+        expiry = scheduler.apply_special_rules(WORK_SINGLE_AUTHOR_1950, JURISDICTION_US)
+        self.assertIsNone(expiry) # Should return None if no special rule matched
+        mock_db.get_copyright_rules_for_jurisdiction.assert_called_once_with(JURISDICTION_US.id)
+
+    def test_apply_special_rules_no_rules_found(self, mock_db):
+        """Test special rules: Jurisdiction has no rules in DB."""
+        mock_db.get_copyright_rules_for_jurisdiction.return_value = []
+        expiry = scheduler.apply_special_rules(WORK_PUBLISHED_1920_US, JURISDICTION_US)
+        self.assertIsNone(expiry)
+        mock_db.get_copyright_rules_for_jurisdiction.assert_called_once_with(JURISDICTION_US.id)
+
+    # --- Test calculate_expiry ---
+    @patch('src.scheduler.apply_special_rules')
+    @patch('src.scheduler.calculate_standard_expiry')
+    def test_calculate_expiry_uses_special_rules(self, mock_standard, mock_special, mock_db):
+        """Test calculate_expiry: Prioritizes special rules if applicable."""
+        special_expiry = date(2000, 1, 1)
+        mock_special.return_value = special_expiry
+        # Use a jurisdiction marked as having special rules
+        work = WORK_PUBLISHED_1920_US # Example work
+        jurisdiction = JURISDICTION_US
+
+        expiry = scheduler.calculate_expiry(work, jurisdiction)
+
+        self.assertEqual(expiry, special_expiry)
+        mock_special.assert_called_once_with(work, jurisdiction)
+        mock_standard.assert_not_called()
+
+    @patch('src.scheduler.apply_special_rules')
+    @patch('src.scheduler.calculate_standard_expiry')
+    def test_calculate_expiry_uses_standard_if_no_special_match(self, mock_standard, mock_special, mock_db):
+        """Test calculate_expiry: Uses standard calculation if no special rule matches."""
+        standard_expiry = date(2020, 12, 31)
+        mock_special.return_value = None # No special rule applied
+        mock_standard.return_value = standard_expiry
+        work = WORK_SINGLE_AUTHOR_1950
+        jurisdiction = JURISDICTION_US # Has special rules, but assume none match
+
+        expiry = scheduler.calculate_expiry(work, jurisdiction)
+
+        self.assertEqual(expiry, standard_expiry)
+        mock_special.assert_called_once_with(work, jurisdiction)
+        mock_standard.assert_called_once_with(work, jurisdiction)
+
+    @patch('src.scheduler.apply_special_rules')
+    @patch('src.scheduler.calculate_standard_expiry')
+    def test_calculate_expiry_uses_standard_if_no_special_rules_flag(self, mock_standard, mock_special, mock_db):
+        """Test calculate_expiry: Uses standard calculation if jurisdiction has no special rules."""
+        standard_expiry = date(2020, 12, 31)
+        mock_standard.return_value = standard_expiry
+        work = WORK_SINGLE_AUTHOR_1950
+        jurisdiction = JURISDICTION_CA # has_special_rules = False
+
+        expiry = scheduler.calculate_expiry(work, jurisdiction)
+
+        self.assertEqual(expiry, standard_expiry)
+        mock_special.assert_not_called() # Should not even try special rules
+        mock_standard.assert_called_once_with(work, jurisdiction)
+
+    @patch('src.scheduler.calculate_standard_expiry')
+    def test_calculate_expiry_no_jurisdiction_uses_primary(self, mock_standard, mock_db):
+        """Test calculate_expiry: Uses work's primary jurisdiction if none provided."""
+        standard_expiry = date(2020, 12, 31)
+        mock_standard.return_value = standard_expiry
+        work = WORK_SINGLE_AUTHOR_1950 # Primary is US
+
+        expiry = scheduler.calculate_expiry(work) # No jurisdiction passed
+
+        self.assertEqual(expiry, standard_expiry)
+        # Should call standard with the work's primary jurisdiction
+        mock_standard.assert_called_once_with(work, work.primary_jurisdiction)
+
+    @patch('src.scheduler.calculate_standard_expiry')
+    def test_calculate_expiry_no_jurisdiction_no_primary(self, mock_standard, mock_db):
+        """Test calculate_expiry: Uses default standard if no jurisdiction and no primary."""
+        standard_expiry = date(2020, 12, 31)
+        mock_standard.return_value = standard_expiry
+        work = Work(id=20, title="No Primary Jur", authors=[AUTHOR_DIED_1950], primary_jurisdiction=None)
+
+        expiry = scheduler.calculate_expiry(work) # No jurisdiction passed
+
+        self.assertEqual(expiry, standard_expiry)
+        # Should call standard with None jurisdiction
+        mock_standard.assert_called_once_with(work, None)
+
+    # --- Test determine_status ---
+    @patch('src.scheduler.calculate_expiry')
+    def test_determine_status_public_domain(self, mock_calculate_expiry, mock_db):
+        """Test determine_status: Work is Public Domain (expiry date passed)."""
+        mock_calculate_expiry.return_value = date(2000, 12, 31) # Expired before TODAY
+        status = scheduler.determine_status(WORK_EXPIRED, current_date=TODAY)
+        self.assertEqual(status, 'Public Domain')
+        mock_calculate_expiry.assert_called_once_with(WORK_EXPIRED, None)
+
+    @patch('src.scheduler.calculate_expiry')
+    def test_determine_status_copyrighted(self, mock_calculate_expiry, mock_db):
+        """Test determine_status: Work is Copyrighted (expiry date future)."""
+        mock_calculate_expiry.return_value = date(2040, 12, 31) # Expires after TODAY
+        status = scheduler.determine_status(WORK_FUTURE_EXPIRY, current_date=TODAY)
+        self.assertEqual(status, 'Copyrighted')
+        mock_calculate_expiry.assert_called_once_with(WORK_FUTURE_EXPIRY, None)
+
+    @patch('src.scheduler.calculate_expiry')
+    def test_determine_status_unknown(self, mock_calculate_expiry, mock_db):
+        """Test determine_status: Status is Unknown (cannot calculate expiry)."""
+        mock_calculate_expiry.return_value = None
+        status = scheduler.determine_status(WORK_UNKNOWN_DEATH, current_date=TODAY)
+        self.assertEqual(status, 'Unknown')
+        mock_calculate_expiry.assert_called_once_with(WORK_UNKNOWN_DEATH, None)
+
+    @patch('src.scheduler.calculate_expiry')
+    def test_determine_status_with_jurisdiction(self, mock_calculate_expiry, mock_db):
+        """Test determine_status: Uses specific jurisdiction."""
+        mock_calculate_expiry.return_value = date(2030, 12, 31) # Example expiry
+        status = scheduler.determine_status(WORK_SINGLE_AUTHOR_1950, JURISDICTION_CA, current_date=TODAY)
+        self.assertEqual(status, 'Copyrighted')
+        mock_calculate_expiry.assert_called_once_with(WORK_SINGLE_AUTHOR_1950, JURISDICTION_CA)
+
+    def test_determine_status_very_old_work(self, mock_db):
+        """Test determine_status: Fallback for very old works (< 1875)."""
+        old_work = Work(id=21, title="Old Work", creation_date=date(1870, 1, 1))
+        status = scheduler.determine_status(old_work, current_date=TODAY)
+        self.assertEqual(status, 'Public Domain')
+
+    def test_determine_status_us_pre_1927(self, mock_db):
+        """Test determine_status: US fallback for works published before 1927."""
+        us_old_work = Work(id=22, title="Old US Work", creation_date=date(1926, 1, 1))
+        status = scheduler.determine_status(us_old_work, JURISDICTION_US, current_date=TODAY)
+        self.assertEqual(status, 'Public Domain')
+
+    def test_determine_status_uses_precalculated_status(self, mock_db):
+        """Test determine_status: Uses pre-calculated status if available for jurisdiction."""
+        work = Work(id=23, title="Precalculated", status_by_jurisdiction={"US": "Public Domain"})
+        status = scheduler.determine_status(work, JURISDICTION_US, current_date=TODAY)
+        self.assertEqual(status, "Public Domain")
+        # calculate_expiry should not be called if status is pre-calculated
+        # Note: This requires mocking calculate_expiry if we want to assert it wasn't called.
+        # For simplicity here, we just check the output.
+
+    # --- Test calculate_multi_jurisdiction_status ---
+    @patch('src.scheduler.determine_status')
+    def test_calculate_multi_jurisdiction_status(self, mock_determine_status, mock_db):
+        """Test calculate_multi_jurisdiction_status: Calculates status across jurisdictions."""
+        mock_db.get_all_jurisdictions.return_value = [JURISDICTION_US, JURISDICTION_EU]
+        mock_db.set_work_copyright_status_by_jurisdiction.return_value = True # Assume success
+
+        # Define return values for determine_status for each jurisdiction
+        def determine_side_effect(work, jurisdiction, current_date=None):
+            if jurisdiction.code == "US":
+                return "Public Domain"
+            elif jurisdiction.code == "EU":
+                return "Copyrighted"
+            return "Unknown"
+        mock_determine_status.side_effect = determine_side_effect
+
+        work = WORK_SINGLE_AUTHOR_1950 # Example work
+
+        status_map = scheduler.calculate_multi_jurisdiction_status(work, [JURISDICTION_US, JURISDICTION_EU])
+
+        expected_map = {"US": "Public Domain", "EU": "Copyrighted"}
+        self.assertEqual(status_map, expected_map)
+
+        # Check determine_status calls
+        self.assertEqual(mock_determine_status.call_count, 2)
+        mock_determine_status.assert_any_call(work, JURISDICTION_US)
+        mock_determine_status.assert_any_call(work, JURISDICTION_EU)
+
+        # Check database update calls (needs calculate_expiry mock as well)
+        # We'll skip the DB call check here for simplicity, but it should be called twice.
+        # mock_db.set_work_copyright_status_by_jurisdiction.assert_any_call(...)
+
+    # --- Test update_work_status ---
+    @patch('src.scheduler.calculate_expiry')
+    @patch('src.scheduler.determine_status')
+    @patch('src.scheduler.calculate_multi_jurisdiction_status')
+    def test_update_work_status(self, mock_multi_status, mock_determine, mock_calculate_expiry, mock_db):
+        """Test update_work_status: Updates expiry, status, and multi-jurisdiction status."""
+        mock_db.get_all_jurisdictions.return_value = ALL_JURISDICTIONS
+        mock_calculate_expiry.return_value = date(2020, 12, 31)
+        mock_determine.return_value = "Public Domain" # Assume global status becomes PD
+        mock_multi_status.return_value = {"US": "Public Domain", "EU": "Public Domain", "GB": "Public Domain", "CA": "Copyrighted", "XX": "Public Domain"}
+
+        work = Work(id=30, title="Update Me", authors=[AUTHOR_DIED_1950], primary_jurisdiction=None) # Start with no expiry/status
+
+        updated_work = scheduler.update_work_status(work)
+
+        # Check if expiry was calculated and set
+        mock_calculate_expiry.assert_called_once_with(work, None) # Called for global expiry
+        self.assertEqual(updated_work.copyright_expiry_date, date(2020, 12, 31))
+
+        # Check if global status was determined and set
+        mock_determine.assert_called_once_with(updated_work) # Called for global status
+        self.assertEqual(updated_work.status, "Public Domain")
+
+        # Check if multi-jurisdiction status was calculated and set
+        mock_multi_status.assert_called_once_with(updated_work, ALL_JURISDICTIONS)
+        self.assertEqual(len(updated_work.status_by_jurisdiction), 5)
+        self.assertEqual(updated_work.status_by_jurisdiction["CA"], "Copyrighted")
+
+        # Check if primary jurisdiction was updated based on author nationality
+        self.assertEqual(updated_work.primary_jurisdiction, JURISDICTION_US) # Author A is US
+
+    # --- Test get_days_until_expiry ---
+    # Note: There are two definitions of get_days_until_expiry in scheduler.py.
+    # Testing the first, more detailed one.
+    @patch('src.scheduler.calculate_expiry')
+    @patch('src.scheduler.determine_status')
+    def test_get_days_until_expiry_future(self, mock_determine_status, mock_calculate_expiry, mock_db):
+        """Test get_days_until_expiry: Expiry date is in the future."""
+        future_expiry = date(2026, 12, 31)
+        mock_calculate_expiry.return_value = future_expiry
+        mock_determine_status.return_value = 'Copyrighted' # Ensure it's not PD
+
+        days = scheduler.get_days_until_expiry(WORK_FUTURE_EXPIRY, current_date=TODAY)
+
+        expected_days = (future_expiry - TODAY).days
+        self.assertEqual(days, expected_days)
+        mock_calculate_expiry.assert_called_once_with(WORK_FUTURE_EXPIRY, None)
+        mock_determine_status.assert_called_once_with(WORK_FUTURE_EXPIRY, None, TODAY)
+
+    @patch('src.scheduler.calculate_expiry')
+    @patch('src.scheduler.determine_status')
+    def test_get_days_until_expiry_past(self, mock_determine_status, mock_calculate_expiry, mock_db):
+        """Test get_days_until_expiry: Expiry date is in the past (Public Domain)."""
+        past_expiry = date(2020, 12, 31)
+        mock_calculate_expiry.return_value = past_expiry
+        mock_determine_status.return_value = 'Public Domain' # Status is PD
+
+        days = scheduler.get_days_until_expiry(WORK_EXPIRED, current_date=TODAY)
+
+        self.assertIsNone(days) # Should return None if already PD
+        mock_calculate_expiry.assert_called_once_with(WORK_EXPIRED, None)
+        mock_determine_status.assert_called_once_with(WORK_EXPIRED, None, TODAY)
+
+    @patch('src.scheduler.calculate_expiry')
+    def test_get_days_until_expiry_unknown(self, mock_calculate_expiry, mock_db):
+        """Test get_days_until_expiry: Expiry date is unknown."""
+        mock_calculate_expiry.return_value = None
+
+        days = scheduler.get_days_until_expiry(WORK_UNKNOWN_DEATH, current_date=TODAY)
+
+        self.assertIsNone(days)
+        mock_calculate_expiry.assert_called_once_with(WORK_UNKNOWN_DEATH, None)
+
+    @patch('src.scheduler.calculate_expiry')
+    @patch('src.scheduler.determine_status')
+    def test_get_days_until_expiry_with_jurisdiction(self, mock_determine_status, mock_calculate_expiry, mock_db):
+        """Test get_days_until_expiry: Uses specified jurisdiction."""
+        future_expiry = date(2035, 12, 31)
+        mock_calculate_expiry.return_value = future_expiry
+        mock_determine_status.return_value = 'Copyrighted'
+
+        days = scheduler.get_days_until_expiry(WORK_FUTURE_EXPIRY, JURISDICTION_CA, current_date=TODAY)
+
+        expected_days = (future_expiry - TODAY).days
+        self.assertEqual(days, expected_days)
+        mock_calculate_expiry.assert_called_once_with(WORK_FUTURE_EXPIRY, JURISDICTION_CA)
+        mock_determine_status.assert_called_once_with(WORK_FUTURE_EXPIRY, JURISDICTION_CA, TODAY)
+
+    # --- Test get_works_by_status_in_jurisdiction ---
+    # Note: There are two definitions of this function as well. Testing the first one.
+    @patch('src.scheduler.determine_status')
+    def test_get_works_by_status_in_jurisdiction(self, mock_determine_status, mock_db):
+        """Test get_works_by_status_in_jurisdiction: Filters works by status."""
+        # Mock database calls
+        mock_db.get_all_jurisdictions.return_value = ALL_JURISDICTIONS
+        mock_db.get_all_works.return_value = [WORK_EXPIRED, WORK_FUTURE_EXPIRY, WORK_SINGLE_AUTHOR_1950]
+
+        # Mock determine_status behavior for US jurisdiction
+        def determine_side_effect(work, jurisdiction, current_date=None):
+            if jurisdiction.code != "US": return "Unknown" # Only care about US for this test
+            if work.id == WORK_EXPIRED.id: return "Public Domain"
+            if work.id == WORK_FUTURE_EXPIRY.id: return "Copyrighted"
+            if work.id == WORK_SINGLE_AUTHOR_1950.id: return "Public Domain" # Died 1950 -> expires 2020-12-31
+            return "Unknown"
+        mock_determine_status.side_effect = determine_side_effect
+
+        # Get Public Domain works in US
+        pd_works = scheduler.get_works_by_status_in_jurisdiction("US", "Public Domain")
+
+        self.assertEqual(len(pd_works), 2)
+        self.assertIn(WORK_EXPIRED, pd_works)
+        self.assertIn(WORK_SINGLE_AUTHOR_1950, pd_works)
+        self.assertNotIn(WORK_FUTURE_EXPIRY, pd_works)
+
+        # Check determine_status calls (should be called for each work for the US jurisdiction)
+        self.assertEqual(mock_determine_status.call_count, 3)
+        mock_determine_status.assert_any_call(WORK_EXPIRED, JURISDICTION_US)
+        mock_determine_status.assert_any_call(WORK_FUTURE_EXPIRY, JURISDICTION_US)
+        mock_determine_status.assert_any_call(WORK_SINGLE_AUTHOR_1950, JURISDICTION_US)
+
+        # Get Copyrighted works in US
+        mock_determine_status.reset_mock() # Reset call count for next check
+        mock_determine_status.side_effect = determine_side_effect # Re-apply side effect
+
+        copyrighted_works = scheduler.get_works_by_status_in_jurisdiction("US", "Copyrighted")
+        self.assertEqual(len(copyrighted_works), 1)
+        self.assertIn(WORK_FUTURE_EXPIRY, copyrighted_works)
+        self.assertEqual(mock_determine_status.call_count, 3)
+
+
+if __name__ == '__main__':
+    # Use our custom test runner instead of the default
+    runner = DetailedTestRunner(verbosity=2)
+    unittest.main(testRunner=runner)

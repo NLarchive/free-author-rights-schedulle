@@ -1,0 +1,22 @@
+{
+  "id": 6,
+  "title": "The Epic of Gilgamesh",
+  "authors": [
+    "Sin-Leqi-Unninni (Attributed)",
+    "Unknown Sumerian Authors"
+  ],
+  "creation_date": "2100-00-00",
+  "publication_date": "1800-00-00",
+  "topic": "Epic Poetry",
+  "secondary_topics": [
+    "Mortality",
+    "Friendship",
+    "The Gods",
+    "Heroism"
+  ],
+  "description": "The Epic of Gilgamesh is an ancient Mesopotamian poem considered among the earliest surviving works of literature. It tells the story of Gilgamesh, the king of Uruk, and his journey towards self-knowledge and acceptance of mortality, intertwined with tales of his friendship with Enkidu and encounters with gods and monsters. The poem explores themes of human limitations and the search for immortality.",
+  "is_collaborative": true,
+  "original_language": "Sumerian",
+  "original_publisher": "Unknown (Clay Tablets)",
+  "source_url": "https://www.ancient.eu/gilgamesh/"
+}

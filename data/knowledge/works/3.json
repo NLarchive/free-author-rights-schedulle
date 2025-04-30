@@ -1,0 +1,21 @@
+{
+  "id": 3,
+  "title": "Snow Crash",
+  "authors": [
+    "Neal Stephenson"
+  ],
+  "creation_date": "1991-01-01",
+  "publication_date": "1992-06-01",
+  "topic": "Cyberpunk",
+  "secondary_topics": [
+    "Virtual Reality",
+    "Linguistics",
+    "Mythology",
+    "Computer Viruses"
+  ],
+  "description": "In a near-future America fractured into corporate city-states, Hiro Protagonist, a pizza delivery driver and hacker, investigates a mysterious computer virus called Snow Crash that affects both the virtual reality Metaverse and the real world. He teams up with Y.T., a teenage skateboard courier, to unravel the origins of the virus and its connection to ancient Sumerian mythology. The novel blends fast-paced action with philosophical and technological speculation.",
+  "is_collaborative": false,
+  "original_language": "English",
+  "original_publisher": "Bantam Books",
+  "source_url": "https://www.nealstephenson.com/snow-crash.html"
+}

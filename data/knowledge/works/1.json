@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "title": "Dune",
+  "authors": [
+    "Frank Herbert"
+  ],
+  "creation_date": "1963-01-01",
+  "publication_date": "1965-08-01",
+  "topic": "Science Fiction, Space Opera",
+  "secondary_topics": [
+    "Ecology",
+    "Politics",
+    "Religion",
+    "Human Evolution"
+  ],
+  "description": "Dune is set on the desert planet Arrakis, the only source of the spice melange, a valuable substance that extends life and enhances mental abilities. The story follows the aristocratic Atreides family as they take control of Arrakis and become embroiled in a complex web of political intrigue, religious fervor, and ecological challenges. It explores themes of power, destiny, and the consequences of manipulating both the environment and human nature.",
+  "is_collaborative": false,
+  "original_language": "English",
+  "original_publisher": "Chilton Books",
+  "source_url": "https://www.penguinrandomhouse.com/books/306240/dune-by-frank-herbert/"
+}

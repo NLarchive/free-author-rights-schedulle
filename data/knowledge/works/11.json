@@ -1,0 +1,22 @@
+{
+  "id": 11,
+  "title": "Oedipus Rex",
+  "authors": [
+    "Sophocles (c. 497/496 BC \u2013 c. 406/405 BC)"
+  ],
+  "creation_date": "0429-01-01",
+  "publication_date": "0429-01-01",
+  "topic": "Greek Tragedy",
+  "secondary_topics": [
+    "Fate",
+    "Free Will",
+    "Tragic Hero",
+    "Incest",
+    "Parricide"
+  ],
+  "description": "Oedipus Rex tells the story of Oedipus, the King of Thebes, who unwittingly fulfills a prophecy that he will kill his father and marry his mother, bringing disaster to his city and family. The play explores themes of fate, free will, and the limits of human knowledge.",
+  "is_collaborative": false,
+  "original_language": "Ancient Greek",
+  "original_publisher": "Unknown (Performed in Athens)",
+  "source_url": "https://www.britannica.com/topic/Oedipus-Rex"
+}
